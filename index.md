@@ -3,4 +3,4 @@ layout: default
 title:  Lanfeng Pan
 ---
 
-My static blog!
+<p>My static blog!</p>
