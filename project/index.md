@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  The Julia Project
+title:  Lanfeng Pan
 ---
 
 The Julia Project as a whole is about bringing usable, scalable technical computing to a greater audience:
