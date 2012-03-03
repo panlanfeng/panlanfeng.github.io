@@ -4,22 +4,22 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>Lanfeng Blog</title>
- <link href="http://panlanfeng.github.com/blog/feed.xml" rel="self"/>
- <link href="http://panlanfeng.github.com/blog"/>
+ <title>The Julia Blog</title>
+ <link href="http://julialang.org/blog/feed.xml" rel="self"/>
+ <link href="http://julialang.org/blog"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://panlanfeng.github.com/blog</id>
+ <id>http://julialang.org/blog</id>
  <author>
-   <name>Lanfeng Pan</name>
-   <email>panlanfeng#gmail.com</email>
+   <name>Julia Developers</name>
+   <email>julia-dev@googlegroups.com</email>
  </author>
 
  {% for post in site.categories.blog %}
  <entry>
    <title>{{ post.title }}</title>
-   <link href="http://panlanfeng.github.com{{ post.url }}"/>
+   <link href="http://julialang.org{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://panlanfeng.github.com{{ post.id }}</id>
+   <id>http://julialang.org{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
