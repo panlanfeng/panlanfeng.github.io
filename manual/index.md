@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  The Julia Manual
+title:  The Manual
 ---
 
 <ol>
