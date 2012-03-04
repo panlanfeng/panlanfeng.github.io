@@ -3,7 +3,7 @@ layout: default
 title:  Lanfeng Pan
 ---
 
-Lanfeng Pan is currently a master student interested in exploratory data analysis.
+Lanfeng Pan is currently a master student interested.
 
 Education:
   -2010 - 2012   Master Renmin University of China; 
