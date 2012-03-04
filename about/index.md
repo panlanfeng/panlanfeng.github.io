@@ -1,9 +1,9 @@
-ï»¿---
+---
 layout: default
 title:  Lanfeng Pan
 ---
 
-Lanfeng Pan is currently a master student interested.
+Lanfeng Pan is currently a master student. ÉñÂíÇé¿ö£¡
 
 Education:
   -2010 - 2012   Master Renmin University of China; 
