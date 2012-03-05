@@ -3,13 +3,13 @@ layout: default
 title:  Lanfeng Pan
 ---
 
-Lanfeng Pan is currently a master student. ÉñÂíÇé¿ö£¡
+Lanfeng Pan is currently a master student. ç¥é©¬æƒ…å†µï¼
 
 Education:
-  -2010 - 2012   Master Renmin University of China; 
-  -2006 - 2010   Bachelor Renmin Unviersity of China.
+ -  2010 - 2012   Master Renmin University of China; 
+ -  2006 - 2010   Bachelor Renmin Unviersity of China.
 
 Research Interests:
-  -Exploratory Data Analysis especially Co-Clustering and Semi-supervised Clustering;
-  -Nonnegative Matrix Factorization;
-  -Text Mining.  
+ -  Exploratory Data Analysis especially Co-Clustering and Semi-supervised Clustering;
+ -  Nonnegative Matrix Factorization;
+ -  Text Mining.  
