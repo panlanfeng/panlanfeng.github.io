@@ -18,3 +18,5 @@ Research Interests:
  -  Nonnegative Matrix Factorization;
 
  -  Text Mining.  
+
+Email: panlanfeng /a t/ gmail com
