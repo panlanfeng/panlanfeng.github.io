@@ -8,6 +8,6 @@ rdiscount:
     - smart
     - generate_toc
 
-chapters:
-  - Introduction: introduction
+
+
  
