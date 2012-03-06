@@ -19,4 +19,4 @@ Research Interests:
 
  -  Text Mining.  
 
-Email: panlanfeng /a t/ gmail com
+Email: lanfeng.pan /a t/ cos.name

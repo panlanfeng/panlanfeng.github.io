@@ -3,10 +3,10 @@ layout: default
 title:  Lanfeng Pan
 ---
 <div id="blogindex">
-  <p>The blog lists</p>
+ 
 
   <ul class="posts">
-    {% for post in site.categories.blog %}
+    {% for post in site.categories %}
       <li>
         <a class="postlink" href="{{ post.url }}">{{ post.title }}</a>
         <span class="timestamp">{{ post.date | date_to_string }}</span>
