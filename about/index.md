@@ -3,9 +3,11 @@ layout: default
 title:  Lanfeng Pan
 ---
 
-Lanfeng Pan is currently a master student. 
+Lanfeng Pan is currently a PhD student at Iowa State University. 
 
 Education:
+
+ -  2012 - now    PhD, Iowa State University;
 
  -  2010 - 2012   Master, Renmin University of China; 
 
