@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: 两个月
 author: <a href="http://panlanfeng.github.com/">Lanfeng</a>
