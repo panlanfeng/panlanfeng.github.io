@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: 最简单的方法制作分形图形
+title: 两个月
 author: <a href="http://panlanfeng.github.com/">Lanfeng</a>
 ---
 
@@ -13,3 +13,5 @@ author: <a href="http://panlanfeng.github.com/">Lanfeng</a>
 略有不爽是教授很顽固，死不认错。Wilcoxon Rank Sum Test必须要有两总体分布形状相似的假设啊亲！
 
 有些本科生的数学水平刷新了我想象的下限，居然能把 $\Sigma x_i y_i$ 等于 $\Sigma x_i * \Sigma y_i$，还有什么负的概率值啊。很多时候助教就是帮他们解一元一次方程和100以内的加减法。
+
+
