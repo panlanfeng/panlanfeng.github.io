@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title:  两个月有感
+title: 最简单的方法制作分形图形
 author: <a href="http://panlanfeng.github.com/">Lanfeng</a>
 ---
 
