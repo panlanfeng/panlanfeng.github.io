@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title:  来美帝俩月有感
+title:  两个月有感
 author: <a href="http://panlanfeng.github.com/">Lanfeng</a>
 ---
 到了两个月零一天，不停的批作业、写作业、做饭。。。 
