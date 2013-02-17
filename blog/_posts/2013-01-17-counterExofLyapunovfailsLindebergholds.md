@@ -9,7 +9,6 @@ In STAT 643, we learned Lyapunov condition implies Lindeberg condition, but not 
 
 I didn't search out any nontrivial example. There must be some other guys found it but I just couldn't find it. Finally I got it myself when I couldn't sleep last night. 
 
-
-<img src="http://i.imgur.com/KUhdoHl.jpg" width="200" height="150">
+click [here](http://i.imgur.com/KUhdoHl.jpg) for the graph, I'm too lazy to type latex.
 
 向人证明一件事情真的很难，数学是最简单的了吧。
