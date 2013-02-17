@@ -15,7 +15,7 @@ body {
 }
 
 #site {
-  width: 75em;
+  width: 55em;
   text-align: left;
   line-height: 1.5em;
   margin: 3em auto 2em auto;
@@ -147,7 +147,7 @@ blockquote {
 /* pages listing blog posts */
 
 #blogindex {
-  width: 30em;
+  width: 55em;
   margin: 2em auto 2em auto;
 }
   #blogindex ul {
