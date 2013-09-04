@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  Lanfeng Pan
 ---
 
@@ -15,10 +15,12 @@ Education:
 
 Research Interests:
 
- -  Exploratory Data Analysis especially Co-Clustering and Semi-Supervised Clustering;
+ -  Data Mining
 
- -  Nonnegative Matrix Factorization;
+ -  Matrix Factorization;
 
  -  Text Mining.  
-
-Email: panlanfeng /a t/ g m a i l . c o m
+ 
+ -  How to Code for Automatic Cooking
+ 
+Email: panlanfeng /a t/ gmail.com
