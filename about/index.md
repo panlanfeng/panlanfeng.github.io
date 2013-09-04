@@ -5,7 +5,7 @@ title:  Lanfeng Pan
 
 Lanfeng Pan is currently a PhD student at Iowa State University. 
 
-Education:
+## Education  
 
  -  2012 - now    PhD, Iowa State University;
 
@@ -13,7 +13,7 @@ Education:
 
  -  2006 - 2010   Bachelor, Renmin Unviersity of China.
 
-Research Interests:
+## Research Interests
 
  -  Data Mining
 
@@ -23,4 +23,6 @@ Research Interests:
  
  -  How to Code for Automatic Cooking
  
-Email: panlanfeng /a t/ gmail.com
+## Contact
+
+ Email: panlanfeng /a t/ gmail.com
