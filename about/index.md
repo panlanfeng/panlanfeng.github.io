@@ -26,5 +26,5 @@ Lanfeng Pan is currently a PhD student at Iowa State University.
 ## Contact
 
  - Email: panlanfeng /a t/ gmail.com
- - Weibo: @æåé
+ - Weibo: @潘岚锋
  - Facebook: https://www.facebook.com/lanfeng.pan
