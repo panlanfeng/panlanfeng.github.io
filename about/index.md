@@ -1,7 +1,6 @@
 ---
-layout: post
+layout: default 
 title:  Lanfeng Pan
-author: Lanfeng Pan
 ---
 
 Lanfeng Pan is currently a PhD student at Iowa State University. 
