@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  An non-trivial Example that Lindeberg holds but Lyapunov fails
+title:  A non-trivial Example that Lindeberg holds but Lyapunov fails
 author: <a href="http://panlanfeng.github.com/">Lanfeng</a>
 ---
 
