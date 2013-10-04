@@ -16,37 +16,37 @@ There is no sum of squares function in R. In linear model, this is the most basi
 
 In the following code, MS(y|x) is `ss(project(y, x)) / (nleves(x) - 1)`.  
 
-```r
-#compute sum of squares
-ss=function(x, na.rm=FALSE){
-    sum((x - mean(x)) ^ 2, na.rm=na.rm)
-}
 
-# Compute the projection of y given x. Currently y can only be numeric.
-# Note: When calculating the ss for interaction terms, we need to remove the contribution of linear parts. 
+    #compute sum of squares
+    ss=function(x, na.rm=FALSE){
+        sum((x - mean(x)) ^ 2, na.rm=na.rm)
+    }
+    
+    # Compute the projection of y given x. Currently y can only be numeric.
+    # Note: When calculating the ss for interaction terms, we need to remove the contribution of linear parts. 
+    
+    project=function(y, x){
+        if(!is.numeric(y))
+            print("sorry, method for project factors is still under developing")
+        if(is.character(x))
+            x <- as.factor(x)
+        if(is.list(x)){
+            x=interaction(x, sep="")
+        }
+        if(is.factor(x)){
+            projected.values <- tapply(y, x, mean)
+            projection <- x
+            levels(projection) <- projected.values
+            projection <- as.numeric(as.character(projection))
+            return(projection)
+        }
+        if(is.numeric(x)){
+            x = as.matrix(x)
+            y = as.matrix(y)
+            return(x %*% solve(crossprod(x)) %*% t(x) %*% y)
+        }
+    }
 
-project=function(y, x){
-    if(!is.numeric(y))
-        print("sorry, method for project factors is still under developing")
-    if(is.character(x))
-        x <- as.factor(x)
-    if(is.list(x)){
-        x=interaction(x, sep="")
-    }
-    if(is.factor(x)){
-        projected.values <- tapply(y, x, mean)
-        projection <- x
-        levels(projection) <- projected.values
-        projection <- as.numeric(as.character(projection))
-        return(projection)
-    }
-    if(is.numeric(x)){
-        x = as.matrix(x)
-        y = as.matrix(y)
-        return(x %*% solve(crossprod(x)) %*% t(x) %*% y)
-    }
-}
-```
 
 
 
