@@ -14,10 +14,9 @@ I want R to support dat[x1==1, ]. It's better than dat[dat$x1==1, ]. And also I 
 
 There is no sum of squares function in R. In linear model, this is the most basic function. So I write a few piece of codes to make life easier, such as functions to calculate <div lang="latex"> MS(y|x) = [E(y|x) - E(y)] ^ 2. </div>
 
-In the following code, MS(y|x) is `ss(project(y, x)) / (nleves(x) - 1)`.
+In the following code, MS(y|x) is `ss(project(y, x)) / (nleves(x) - 1)`.  
 
 ```r
-
 #compute sum of squares
 ss=function(x, na.rm=FALSE){
     sum((x - mean(x)) ^ 2, na.rm=na.rm)
