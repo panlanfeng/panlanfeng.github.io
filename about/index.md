@@ -1,30 +1,27 @@
 ---
 layout: default 
-title:  Lanfeng Pan
+title:  Chandler Zuo
 ---
 
-Lanfeng Pan is currently a PhD student at Iowa State University. 
+Chandler Zuo is currently a PhD candidate at University of Wisconsin Madison. 
 
 ## Education  
 
- -  2012 - now    PhD, Iowa State University;
+ -  2010 - now    PhD in Statistics, Master in Computer Sciences, University of Wisconsin Madison;
 
- -  2010 - 2012   Master, Renmin University of China; 
-
- -  2006 - 2010   Bachelor, Renmin Unviersity of China.
+ -  2006 - 2010   Bachelor in Actuarial Sciences, Renmin Unviersity of China.
 
 ## Research Interests
 
- -  Data Mining
+ -  Machine Learning
 
- -  Matrix Factorization;
+ -  Bayesian Computation
 
- -  Text Mining.  
- 
- -  How to Code for Automatic Cooking
- 
+ -  Statistical Algorithms
+
+ -  R Programming
+
 ## Contact
 
- - Email: panlanfeng /a t/ gmail.com
- - Weibo: @潘岚锋
- - Facebook: https://www.facebook.com/lanfeng.pan
+ - Email: chandler.c.zuo /a t/ gmail.com
+
