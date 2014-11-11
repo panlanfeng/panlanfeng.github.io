@@ -15,3 +15,8 @@ I will keep liking it. If oneday there is some feature driving me mad and I coul
 This maybe the biggest reason for me to use Linux and other open source softwares.
 
 P.S. I really like the windows picker, spotlight and finder on Mac. I found indicator-synapse, the Ubuntu version of spotlight. But I failed to find a handy file manager as finder. 
+
+
+##Update
+
+If I have enough money, I will buy a Macbook anyway.  
