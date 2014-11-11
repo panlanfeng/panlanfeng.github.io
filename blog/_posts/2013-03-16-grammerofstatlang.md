@@ -4,15 +4,15 @@ title:  Some ideas about grammar of statistics language
 author: <a href="http://panlanfeng.github.com/">Lanfeng</a>
 ---
 
-Many problems, such as some in Philosophy, are difficult because it's hard to state them clearly. A powerful language system improves people's ability to solve complicated problems. 
+Many problems, such as some in Philosophy, are difficult because it is hard to state them clearly. A powerful language system improves people's ability to solve complicated problems. 
 
 R is almost a statistics language. Sometimes it helps to think in R commands. For example, `pnorm(2.5, 2, 4)`, `qt(.975, 20)` is more intuitive than mathematical notations. And `by`, `*ply` functions will help to think about matrix computations. 
 
-It's a good idea to melt programming language and mathematical language together. Sentences, or code can help to understand and can be run at the same time. This requires a programming language to be very expressive. R is far from enough.  
+It is a good idea to melt programming language and mathematical language together. Sentences, or code can help to understand and can be run at the same time. This requires a programming language to be very expressive. R is far from enough.  
 
-I want R to support dat[x1==1, ]. It's better than dat[dat$x1==1, ]. And also I hope I can use  "|" as conditioning, for example `mean(y|x)` where `x` is a category vector. I don't know how to implement this two functions in R.
+I want R to support `dat[x1==1, ]`. It's better than `dat[dat$x1==1, ]`. And also I hope I can use  `|` as conditioning, for example `mean(y|x)` where `x` is a category vector. I don't know how to implement this two functions in R.
 
-There is no sum of squares function in R. In linear model, this is the most basic function. So I write a few piece of codes to make life easier, such as functions to calculate <div lang="latex"> MS(y|x) = [E(y|x) - E(y)] ^ 2. </div>
+There is no sum of squares function in R. In linear model, this is the most basic function. So I write a few piece of codes to make life easier, such as functions to calculate MS(y|x) = [E(y|x) - E(y)] ^ 2.
 
 In the following code, MS(y|x) is `ss(project(y, x)) / (nleves(x) - 1)`.  
 
