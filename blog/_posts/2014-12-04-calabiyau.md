@@ -19,7 +19,7 @@ Perhaps there is no way to visualize a six-dimensional object. But we can always
 So here is my work. Forgive my bad aesthetic tastes.
 
 ![](https://dl.dropboxusercontent.com/u/72368739/blog/calabi_yau_5.jpg)
-![](https://dl.dropboxusercontent.com/u/72368739/blog/calabi_yau_5_side.jpg)
+![](https://dl.dropboxusercontent.com/u/72368739/blog/calabi_yau_5_side1.jpg)
 ![](https://dl.dropboxusercontent.com/u/72368739/blog/calabi_yau_5_side2.jpg)
 ![](https://dl.dropboxusercontent.com/u/72368739/blog/calabi_yau_5_side3.jpg)
 
