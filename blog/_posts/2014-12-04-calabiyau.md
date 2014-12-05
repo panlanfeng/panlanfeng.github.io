@@ -34,7 +34,8 @@ Here are the codes. That is all.
 	        z1 = exp(2 * pi * I * x) * exp(log(cos(I * z)) * 2 / n)
 	        z2 = exp(2 * pi * I * y ) * exp(log(-I * sin(I * z)) * 2 / n)
 	    }
-	  return(c(Re(z2), cos(alpha) * Im(z1) + sin(alpha) * Im(z2), Re(z1), (pi + Arg(z1)) / (2 * pi + Arg(z1) + Arg(z2))))
+	  return(c(Re(z2), cos(alpha) * Im(z1) + sin(alpha) * Im(z2), Re(z1), (pi + Arg(z1)) /
+		(2 * pi + Arg(z1) + Arg(z2))))
 	}
 
 	oneGrid <- function(x, y, m = 20, n) {
@@ -60,7 +61,11 @@ Here are the codes. That is all.
 	    for(k in seq(n)) {
 	        for(l in seq(n)) {
 	            grid.dat <- oneGrid(k / n, (l + 0.5) / n, n = n)
-	            scatter3D(x = c(grid.dat$x), y = c(grid.dat$y), z = c(grid.dat$z), col = NULL, cex = 0, surf = list(x = 	grid.dat$x, y = grid.dat$y, z = grid.dat$z, col = myColorRamp(grid.dat$w), alpha = 1), xlim = c(-1.8, 1.8), ylim = c(-1.8, 	1.8), zlim = c(-1.8, 1.8), add = !(k == 1 & l == 1), phi = phi, theta = theta, alpha = 0, colkey = FALSE, axes = FALSE, bty = 	"n")
+	            scatter3D(x = c(grid.dat$x), y = c(grid.dat$y), z = c(grid.dat$z), col = NULL,
+ 			cex = 0, surf = list(x = 	grid.dat$x, y = grid.dat$y, z = grid.dat$z,
+			col = myColorRamp(grid.dat$w), alpha = 1), xlim = c(-1.8, 1.8),
+			ylim = c(-1.8, 	1.8), zlim = c(-1.8, 1.8), add = !(k == 1 & l == 1),
+			phi = phi, theta = theta, alpha = 0, colkey = FALSE, axes = FALSE, bty = "n")
 	        }
 	    }
 	}
