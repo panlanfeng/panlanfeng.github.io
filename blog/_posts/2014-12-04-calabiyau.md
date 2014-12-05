@@ -16,58 +16,12 @@ OK, I will stop digressing any further. The main purpose of this post is using R
 
 Perhaps there is no way to visualize a six-dimensional object. But we can always visualize its projection in a lower dimensional space. A popular method is introduced by [Andrew Hansen](http://www.cs.indiana.edu/~hanson/), who plots its shadow in the three dimensional space. As I searched online, there are codes in Matlab, Latex and Mathematica implementing his method. It is a little shame that nobody has done it in R. After all, R is a powerful graphic software.
 
-So here is my work.
+So here is my work. Forgive my bad aesthetic tastes.
 
-![](https://dl.dropboxusercontent.com/u/72368739/blog/calabi_yau_5.jpg) ![](https://dl.dropboxusercontent.com/u/72368739/blog/calabi_yau_5_side.jpg)
-![](https://dl.dropboxusercontent.com/u/72368739/blog/calabi_yau_10.jpg) ![](https://dl.dropboxusercontent.com/u/72368739/blog/calabi_yau_10_side.jpg)
+![](https://dl.dropboxusercontent.com/u/72368739/blog/calabi_yau_5.jpg)
+![](https://dl.dropboxusercontent.com/u/72368739/blog/calabi_yau_5_side.jpg)
+![](https://dl.dropboxusercontent.com/u/72368739/blog/calabi_yau_5_side2.jpg)
+![](https://dl.dropboxusercontent.com/u/72368739/blog/calabi_yau_5_side3.jpg)
 
+Here are the [codes](https://dl.dropboxusercontent.com/u/72368739/blog/calabi_yau.R).
 
-Here are the codes. That is all.
-
-	library(plot3D)
-
-	triple <- function(z, x, y, n) {
-	    alpha <- pi / 3
-	    I <- complex(1, 0, 1)
-	    if(z == 0) {
-	        z1 <- exp(2 * pi * I * x)
-	        z2 <- 0
-	    } else {
-	        z1 = exp(2 * pi * I * x) * exp(log(cos(I * z)) * 2 / n)
-	        z2 = exp(2 * pi * I * y ) * exp(log(-I * sin(I * z)) * 2 / n)
-	    }
-	  return(c(Re(z2), cos(alpha) * Im(z1) + sin(alpha) * Im(z2), Re(z1), (pi + Arg(z1)) /
-		(2 * pi + Arg(z1) + Arg(z2))))
-	}
-
-	oneGrid <- function(x, y, m = 20, n) {
-	    M <- mesh(seq(-1, 1, length.out = m),
-	              seq(0, pi / 2, length.out = m))
-		
-	    dat <- apply(cbind(c(M$x), c(M$y)),
-	                 1, function(w)
-	                     triple(complex(1, w[1], w[2]), x, y, n))
-	    x.mesh <- matrix(dat[1, ], nrow = m)
-	    y.mesh <- matrix(dat[2, ], nrow = m)
-	    z.mesh <- matrix(dat[3, ], nrow = m)
-	    w.mesh <- matrix(dat[4, ], nrow = m)
-	    return(list(x = x.mesh, y = y.mesh, z = z.mesh, w = w.mesh))
-	}
-
-	myColorRamp <- function(values) {
-	    x <- colorRamp(c("purple", "green"))(values)
-	    rgb(x[,1], x[,2], x[,3], maxColorValue = 255)
-	}
-	
-	plotCalabiYau <- function(n, phi = 0, theta = 0) {
-	    for(k in seq(n)) {
-	        for(l in seq(n)) {
-	            grid.dat <- oneGrid(k / n, (l + 0.5) / n, n = n)
-	            scatter3D(x = c(grid.dat$x), y = c(grid.dat$y), z = c(grid.dat$z), col = NULL,
- 			cex = 0, surf = list(x = 	grid.dat$x, y = grid.dat$y, z = grid.dat$z,
-			col = myColorRamp(grid.dat$w), alpha = 1), xlim = c(-1.8, 1.8),
-			ylim = c(-1.8, 	1.8), zlim = c(-1.8, 1.8), add = !(k == 1 & l == 1),
-			phi = phi, theta = theta, alpha = 0, colkey = FALSE, axes = FALSE, bty = "n")
-	        }
-	    }
-	}
