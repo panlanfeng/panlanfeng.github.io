@@ -16,10 +16,9 @@ Perhaps there is no way to visualize a six-dimensional object. But we can always
 
 So here is my work.
 
-![](https://dl.dropboxusercontent.com/u/72368739/blog/calabi_yau_5.jpg)
-![](https://dl.dropboxusercontent.com/u/72368739/blog/calabi_yau_5_side.jpg)
-![](https://dl.dropboxusercontent.com/u/72368739/blog/calabi_yau_10_side.jpg)
-![](https://dl.dropboxusercontent.com/u/72368739/blog/calabi_yau_10.jpg)
+![](https://dl.dropboxusercontent.com/u/72368739/blog/calabi_yau_5.jpg) ![](https://dl.dropboxusercontent.com/u/72368739/blog/calabi_yau_5_side.jpg)
+![](https://dl.dropboxusercontent.com/u/72368739/blog/calabi_yau_10.jpg) ![](https://dl.dropboxusercontent.com/u/72368739/blog/calabi_yau_10_side.jpg)
+
 
 Here are the codes. That is all.
 
