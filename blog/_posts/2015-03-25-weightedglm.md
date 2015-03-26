@@ -17,7 +17,7 @@ Is this a nice result? A simple fix for a seemingly complicated problem, isn't i
 Well, let's step back a little. There are two categories in the data set: positive and negative. We have only looked at the predicting error in the positive set. How about the negative set? To that end, I generate the confusion matrices for each of the three logistic regression methods. Each confusion matrix is a two by two matrix, with the rows corresponding to the true category, and the columns representing the predicted category. The confusion matrix for the naive logistic regression is:
 
 |       |Predicted  |
----------------------
+|-------|-------|---|
 |True   |NEG	|POS|
 |NEG    |8976	|0  |
 |POS    |1003	|21 |
