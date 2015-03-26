@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Weighed Logistic Regression
+title:  Logistic Regression with Imbalanced Data
 author: <a href="http://chandlerzuo.github.io/">Chandler</a>
 ---
 
