@@ -28,17 +28,19 @@ How about the other cases?
 
 Subsampled:
 
-	Predicted
-True	NEG	POS
-NEG	6778	2198
-POS	255	769
+|       |Predicted  |
+|-------|-------|---|
+|True   |NEG	|POS|
+|NEG	|6778	|2198|
+|POS	|255	|769|
       
 Weighted Logistic Regression:
 
-	 Predicted
-True	 NEG	POS
-NEG	 6785	2191
-POS	 258	766
+|       |Predicted  |
+|-------|-------|---|
+|True   |NEG	|POS|
+|NEG	|6785	|2191|
+|POS	|258	|766|
 
 We see that both of them predict a fair amount of true negatives as positives, the so called Type-I error. This is the price we pay!
 
