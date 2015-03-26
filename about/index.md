@@ -7,7 +7,9 @@ Chandler Zuo is currently a PhD candidate at University of Wisconsin Madison.
 
 ## Education  
 
- -  2010 - now        PhD in Statistics, MS in Computer Sciences, University of Wisconsin Madison;
+ -  2010 - now        PhD in Statistics, University of Wisconsin Madison;
+
+ -  2012 - 2014       MS in Computer Sciences, University of Wisconsin Madison;
 
  -  2006 - 2010       Bachelor in Actuarial Sciences, Renmin Unviersity of China.
 
@@ -25,7 +27,7 @@ Chandler Zuo is currently a PhD candidate at University of Wisconsin Madison.
 
 ## Professional Affiliation
 
-Associate of the Society of Actuaries
+Associate of the Society of Actuaries, 2015.
 
 ## Contact
 
