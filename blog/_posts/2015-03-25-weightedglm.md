@@ -44,7 +44,7 @@ Weighted Logistic Regression:
 
 We see that both of them predict a fair amount of true negatives as positives, the so called Type-I error. This is the price we pay!
 
-So if we want to combine the error rates on both categories, how should we compare the three methods? One answer is the ROC curve. To generate such a curve, first we need to realize that logistic regression models only output the predicted probability values for each observation. To convert such probabilities to actual predictions we need to set a cut-off. For example, we can set observations with probabilities >=0.5 as the predicted positives, the strategy we actually used in generating the previous confusion matrices. Within each confusion matrix, we can compute two quantities:
+So if we want to combine the error rates on both categories, how should we compare the three methods? One answer is the ROC curve. To generate such a curve, first we need to realize that logistic regression models only output the predicted probability values for each observation. To convert such probabilities to actual predictions we need to set a cut-off. For the previous confusion matrices, we have used the cut-off as 0.5, and assigned observations with probabilities >=0.5 as the predicted positives. This is the usual choice in practice. Within each confusion matrix, we can compute two quantities:
 
 False Positive Rate (FPR) = (# True positives which are predicted as positives) / (# Predicted positives);
 
