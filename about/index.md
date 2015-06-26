@@ -3,11 +3,11 @@ layout: default
 title:  Chandler Zuo
 ---
 
-Chandler Zuo is currently a PhD candidate at University of Wisconsin Madison. 
+Chandler Zuo is currently a data scientist at Audible Inc. 
 
 ## Education  
 
- -  2010 - now        PhD in Statistics, University of Wisconsin Madison;
+ -  2010 - 2015        PhD in Statistics, University of Wisconsin Madison;
 
  -  2012 - 2014       MS in Computer Sciences, University of Wisconsin Madison;
 
@@ -35,5 +35,5 @@ Associate of the Society of Actuaries, 2015.
 
  - Twitter: @c_zuo
 
- - LinkedIn: [here](https://www.linkedin.com/profile/view?id=189363023&trk=spm_pic)
+ - LinkedIn: [here](https://www.linkedin.com/pub/chandler-zuo-ph-d-asa/53/501/bb)
 
