@@ -20,3 +20,10 @@ P.S. I really like the windows picker, spotlight and finder on Mac. I found indi
 ##Update
 
 If I have enough money, I will buy a Macbook anyway.  
+
+##Update July, 2015
+
+I was too young too naive.
+After my previous laptop had a hardware issue, I bought a Mac pro and it is great. 
+
+After I found the windows shell [Babun](http://babun.github.io/), windows becomes adorable too. 
