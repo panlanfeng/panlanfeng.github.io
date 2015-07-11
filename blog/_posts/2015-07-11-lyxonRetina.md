@@ -1,4 +1,9 @@
-###Build lyx from source with qt5 on Mac
+---
+layout: post
+title: Build lyx from source with qt5 on Mac
+author: <a href="http://panlanfeng.github.com/">Lanfeng</a>
+---
+
 
 The stable lyx release looks terrible on retina screen. The on working version 2.2 will support high resolution display but it will not be available in a short time. Building from source is the only option if one cannot bear with the blurry font.  
 
