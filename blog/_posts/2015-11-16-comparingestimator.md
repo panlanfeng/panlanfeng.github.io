@@ -4,7 +4,7 @@ title: Simulation Study Comparing Several Estimators Using Propsensity Scores
 author: <a href="http://panlanfeng.github.com/">Lanfeng</a>
 ---
 
-```julia
+```
 using Distributions
 using GLM
 using DataFrames
@@ -22,7 +22,7 @@ p = Float64[1/(1+exp(-(ϕ[1] + x[i]*ϕ[2]))) for i in 1:n]
 Maximum estimate of $\phi$
 
 
-```julia
+```
 xdata=DataFrame(X=x, Y=δ)
 missingmodel = glm(Y~X, xdata, Binomial(), LogitLink())
 ϕhat = coef(missingmodel)
@@ -32,21 +32,17 @@ missingmodel = glm(Y~X, xdata, Binomial(), LogitLink())
 ## Propensity Score Adjusted Estimator
 
 
-```julia
+```
 θ₁ = sum(δ .* y ./ δhat) / sum(δ ./ δhat)
 ```
 
-
-
-
     4.008805542249221
-
 
 
 The variance estimator is $\hat{V}(\hat{\theta}_1) = A_{11}^{-1}(B_{11} - B_{12}B_{22}^{-1}B_{21})A_{11}^{-1}$
 
 
-```julia
+```
 A11 = mean(δ ./ δhat)
 B11 = 1/n^2 * sum(δ .* (y .- θ₁).^2 ./ δhat.^2)
 B12 = 1/n^2 .* [sum(δ .* (1./δhat .- 1)), sum(δ .* x .* (1./δhat .- 1))]
@@ -66,7 +62,7 @@ V̂₁ = (1/A11 * (B11 - B12'*inv(B22)*B12) * 1/A11)[1]
 ## Pseudo Optimal Regression Estimator
 
 
-```julia
+```
 X̄ps = [mean(δ ./ δhat), mean(δ .* x ./ δhat);]
 ȳps = mean(δ .* y ./ δhat)
 x̄ = mean(x)
@@ -83,11 +79,11 @@ B̂ = inv( X' *  Σ * X ) * X' * Σ * y
 
 
 
-The linearization of $\hat{\theta}_2(\hat{B})$ will be exactely the same as $\hat{\theta}_2(B)$ while 
+The linearization of $\hat{\theta}_2(\hat{B})$ will be exactly the same as $\hat{\theta}_2(B)$ while 
 $$\hat{\theta}_2(B) = \frac{1}{n}\sum (\frac{\delta_i}{\hat{\pi_i}} (y_i - x_i B) + x_i B)$$
 
 
-```julia
+```
 d = δ ./ δhat .* y .+ X * B̂ - δ ./ δhat .* (X * B̂)
 V̂₂ = var(d) / n
 ```
@@ -102,7 +98,7 @@ V̂₂ = var(d) / n
 ## Optimal Regression Estimator
 
 
-```julia
+```
 Xaug = [X δhat δhat.*x]
 B̂star = inv( Xaug' *  Σ * Xaug ) * Xaug' * Σ * y
 θ₃ = (ȳps + ([1, x̄] - X̄ps)' * B̂star[1:2])[1]
@@ -123,7 +119,7 @@ and
 $$\hat{V}(\hat{\theta}_3) = \frac{1}{n(n-1)}\sum (\hat{\eta}_i - \bar{\hat{\eta}}_n)^2$$
 
 
-```julia
+```
 η = Xaug * B̂star
 η = η .+ δ ./ δhat .* (y .- η)
 V̂₃ = var(η) / n
@@ -139,7 +135,7 @@ V̂₃ = var(η) / n
 ## Regression Weight Estimator
 
 
-```julia
+```
 Z = [1./δhat ones(n) x]
 Σ = diagm(δ)
 θ₄ = (mean(Z, 1) * inv(Z' * Σ * Z) * Z' * Σ * y)[1]
@@ -158,7 +154,7 @@ The variance estimator can be obtained as
 $$\frac{1}{n(n-1)}\sum (\hat{d}_i - \bar{\hat{d}}_n)^2$$
 
 
-```julia
+```
 w = mean(Z, 1) * inv(Z' * Σ * Z) * Z'
 d = Z * inv(Z' * Σ * Z) * Z' * Σ * y 
 d = d .+ n .* δ .* w[:]  .* (y .- d)
@@ -175,7 +171,7 @@ V̂₄ = var(d) / n
 ## Repeat for 2000 Times
 
 
-```julia
+```
 nB = 2000
 θ = zeros(nB)
 θ₁ = zeros(nB)
@@ -254,7 +250,7 @@ nothing
 ```
 
 
-```julia
+```
 df = DataFrame( mean =[mean(θ₁), mean(θ₂), mean(θ₃), mean(θ₄);], std =[std(θ₁), std(θ₂), std(θ₃), std(θ₄);], 
 pvalue=[p1, p2, p3, p4;])
 df
@@ -268,7 +264,7 @@ df
 
 
 
-```julia
+```
 using RCall
 g=globalEnv
 g[:theta1] = θ₁
@@ -303,11 +299,9 @@ As shown by the T test, $\theta_4$ is biased.
 The Monte Carlo relative bias of the variance estimators are
 
 
-```julia
+```
 [mean(V̂₁) / var(θ₁) - 1 mean(V̂₂) / var(θ₂) - 1 mean(V̂₃) / var(θ₃) - 1 mean(V̂₄) / var(θ₄) - 1] 
 ```
-
-
 
 
     1x4 Array{Float64,2}:
@@ -315,4 +309,4 @@ The Monte Carlo relative bias of the variance estimators are
 
 
 
-The relative biase of the first estimator is nonnegligeble. 
+The relative biases of the first estimator is non negligible. 
