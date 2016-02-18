@@ -11,7 +11,13 @@ html, body {
 
 body {
   background-color: white;
-  font: 12pt "PT Sans","Helvetica Neue",Helvetica,Arial,"Microsoft YaHei",sans-serif;
+  margin: 0 auto;
+  max-width: 60rem;
+  font-variant-ligatures: common-ligatures;
+  -moz-font-feature-settings: "liga=1, swsh=0, cswh=0";
+  text-rendering: optimizeLegibility;
+  font-family: "Minion Pro Caption", minion-pro-caption, "Minion Pro", "Garamond Premier Pro Caption", "Garamond Premier Pro", "Hoefler Text", Constantia, Garamond, Palatino, "Palatino Linotype", Baskerville, "Book Antiqua", Georgia, "Century Schoolbook L", serif;
+  color: #333232;
 }
 
 #site {
@@ -36,18 +42,22 @@ body {
     }
 
 .title, h1, h2, h3, h4, h5, h6 {
-  font-family: Helvetica, Arial, Clean, sans-serif;
-  font-size: 105%;
+    font-family: "Garamond Premier Pro", garamond-premier-pro, "Adobe Caslon Pro", "Minion Pro", Constantia, serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #111;
+    clear: left;
 }
 
 .title {
   text-align: center;
-  font-size: 130%;
+  font-size: 150%;
 }
 
 h1 {
-  font-size: 110%;
-  padding-top: 1ex;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 3rem;
 }
 
 h2 {
@@ -79,57 +89,27 @@ ul {
 }
   .figure p.note { font-size: 50%; }
 
-/* benchmarks table */
-
-table.benchmarks {
-  margin-left: auto;
-  margin-right: auto;
-  border-collapse: collapse;
-}
-  table.benchmarks thead {
-    /* border-top: 1px solid black; */
-    border-bottom: 1px solid black;
-  }
-  table.benchmarks tbody {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-  }
-  table.benchmarks colgroup col.relative {
-    border-left: 1px solid black;
-  }
-  table.benchmarks thead th,
-  table.benchmarks thead td {
-    width: 10ex;
-    text-align: center;
-    padding: 0 1ex;
-  }
-  table.benchmarks thead td {
-    padding-bottom: 0.75ex;
-  }
-  table.benchmarks tbody {
-    font: 80% Monaco, Courier, mono;
-  }
-  table.benchmarks tbody th {
-    font-weight: normal;
-    text-align: left;
-    padding: 0 1em;
-  }
-  table.benchmarks tbody td.data {
-    text-align: right;
-    padding: 0 2em 0 0;
-  }
 
 /* inline code and code blocks */
 
-code {
-  font: 80% Monaco, 'Courier New', Courier, monospace;
+code, pre, kbd {
+  font-family: Inconsolata, inconsolata, "Source Code Pro", Terminus, Consolas, "Liberation Mono", "Bitstream Vera Sans Mono", "Andale Mono WT", "Andale Mono", Monaco, "Lucida Console", "Lucida Sans Typewriter", "Nimbus Mono L", "Courier New", Courier, monospace;
 }
 
 pre {
-  border: 1px solid #ddd;
-  margin: 1em 2em 1em 1.5em;
-  padding: .75em 1.25em;
-  line-height: 1em;
+  border: 1px solid #C4BCB3;
+  margin: 0 0 1.5rem 0;
+  padding: 0.6875rem;
+  /* 11 px */
+  background-color: #f1efec;
+  color: #333232;
+  line-height: 1.5rem;
+  white-space: pre;
+  overflow-x: scroll;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  border-radius: 0.5rem;
 }
 
 .sidebar {
