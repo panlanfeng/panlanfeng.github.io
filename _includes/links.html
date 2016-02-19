@@ -1,13 +1,16 @@
-<div class="links">
-  <p> <a href="/">Blog</a>
+<aside class="links">
+<h1><a href="/"><span>Lanfeng</span> <span>Pan</span></a></h1>
+<ul>
+  {% for item in site.navigation %}
+      {% assign class = nil %}
+      {% if page.url contains item.url and item.url != '/' %}
+          {% assign class = 'active' %}
+      {% endif %}
+      {% if page.url == '/' and item.url == '/' %}
+          {% assign class = 'active' %}
+      {% endif %}
+      <li><a href="{{ item.url }}" class="{{ class }}">{{ item.title }}</a></li>
+  {% endfor %}
 
-    | <a href="/about/">About</a>
-    | <a href="/Chinese/">Chinese</a>
-   | <a href="https://github.com/panlanfeng">Github</a>
-
-    {% if site.server %}
-    | <a href="/drafts/">Drafts</a>
-    {% endif %}
-<!--    | <a href="http://feeds.feedburner.com/panlanfeng">rss</a>       -->
-  </p>
-</div>
+</ul>
+</aside>
