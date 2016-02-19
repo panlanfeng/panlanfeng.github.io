@@ -8,6 +8,6 @@ navigation:
   - url: "/blog/"
     title: Blog
   - url: "/Chinese/"
-    title: 中文
+    title: 博客
   - title: Github
     url: "https://github.com/panlanfeng" 
