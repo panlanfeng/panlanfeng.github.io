@@ -1,6 +1,6 @@
 permalink: /:categories/:year/:month/:title
 
-highlighter: rough
+highlighter: rouge
     
 navigation:
   - url: "/about/"
