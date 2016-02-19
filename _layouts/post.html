@@ -1,7 +1,6 @@
 ---
 layout: common
 ---
-<div class="title" href="panlanfeng.github.com">Lanfeng Pan</div>
 {% include links.html %}
 
 <div id="blogpost">
@@ -9,17 +8,7 @@ layout: common
 
   <p class="metadata">
     <span class="timestamp">{{ page.date| date_to_string }}</span>
-    {% if page.author %}
-    &nbsp;|&nbsp;
-    <span class="author">{{ page.author }}</span>
-    {% elsif page.authors %}
-    &nbsp;|&nbsp;
-    <span class="author">
-      {% for author in page.authors %}
-        {{ author }}{% unless forloop.last %},{% endunless %}
-      {% endfor %}
-    </span>
-    {% endif %}
+
   </p>
 
   {{ content }}
