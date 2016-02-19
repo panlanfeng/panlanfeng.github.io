@@ -1,9 +1,13 @@
 permalink: /:categories/:year/:month/:title
 
-highlighter: pygments
-
-markdown: kramdown
+highlighter: rough
     
-
-
- 
+navigation:
+  - url: "/about/"
+    title: CV
+  - url: "/blog/"
+    title: Blog
+  - url: "/Chinese/"
+    title: 中文
+  - title: Github
+    url: "https://github.com/panlanfeng" 
