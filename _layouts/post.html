@@ -15,26 +15,7 @@ layout: common
 
 </div>
 
-{% if page.mentions %}
-<div id="mentions">
-  <b>Further Discussion:</b><ul>
-  {% for mention_hash in page.mentions %}
-    {% for mention in mention_hash %}
-      <li><a href="{{mention[1]}}">{{mention[0]}}</a></li>
-    {% endfor %}
-  {% endfor %}
-  </ul>
-</div>
-{% endif %}
 
-{% assign show_comments = true %}
-{% for category in page.categories %}
-  {% if category == 'drafts' %}
-    {% assign show_comments = false %}
-  {% endif %}
-{% endfor %}
-
-{% if show_comments %}
 <div id="disqus_thread"></div>
 <script type="text/javascript">
   {% if site.server %}
@@ -49,4 +30,3 @@ layout: common
      document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
 </script>
-{% endif %}
