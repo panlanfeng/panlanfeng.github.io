@@ -47,7 +47,7 @@ plot(xs, den, type="l")
  Julia has its own parallel computing framework. Starting Julia with 
  
 ~~~~~ bash
-julia -p 4
+$ julia -p 4
 ~~~~~
 
  will attach 4 workers if a computer has more than 4 processes. Then we can do parallel computing via the `pmap` function or the `@parallel` macro. For example, in `GaussianMixtureTest` I want to find out the largest log-likelihood among several possible $$\tau$$ values
@@ -68,14 +68,14 @@ end
  
  Parallel computing within a single computer can only use a few processes. But a typical simulation study may have to be repeated for thousands times while each simulation may take several hours. In this case several hundred processes are needed. It is possible for julia to combine workers or processes across many nodes. For example in a PBS system, we can start julia with 160 workers in the following way. First request 10 nodes and 16 processes on each,
 
-~~~~~ 
-qsub -I -l nodes=10:ppn=16
+~~~~~ bash
+$ qsub -I -l nodes=10:ppn=16
 ~~~~~
 
  Then start julia with
 
-~~~
-julia --machinefile=$PBS_NODEFILE
+~~~ bash
+$ julia --machinefile=$PBS_NODEFILE
 ~~~
 
  This will attach all requested processes into julia. The amazing thing is the 160 processes appear no difference with the 4 local processes started by `julia -p 4` in a single computer to the user. Or in other words it can run in parallel across several computers without using MPI and thus code running locally will run on linux serve without any change. 
