@@ -12,7 +12,7 @@ Comparing to the `KernelDensity` from JuliaStat group, `KernelEstimator` provide
 
  2. A density function may not have a simple character function form
 
- 3. A kernel may not necessary to be a density. When we estimate a cumulative density function, the kernel to use should also be in the CDF form.
+ 3. A kernel may not necessary be a density. When we estimate a cumulative density function, the kernel to use should also be in the CDF form.
  
  4. A kernel does not have to be nonnegative. Certain kernel with negative value can also be used to estimate density as long as it satisfies some conditions. Search [Bias Reduced Kernel].
  

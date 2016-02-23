@@ -102,6 +102,6 @@ Tvec = pmap(brun, 1:160)
 
 ## More
 
-There are some other useful packages, such as numerical optimization packages `Optim` or `NLopt`, numerical integration package `Cubature` and Gauss Quadrature calculation package `FastGaussQuadrature`.
+There are some other useful packages, such as numerical optimization packages `Optim` or `NLopt`, numerical integration package `Cubature`, Gauss Quadrature calculation package `FastGaussQuadrature` and Nonparametric estimation `KernelDensity` and `KernelEstimator`.
 
 Given all these useful packages and julia's amazing speed, everyone who want to develop some statistical method from scratch should have a try in julia.
