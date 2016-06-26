@@ -1,7 +1,7 @@
-permalink: /:categories/:year/:month/:title
+permalink: /:categories/:year/:month/:title/
 
 highlighter: rouge
-url: http://panlanfeng.github.io
+url: http://panlanfeng.github.io/
     
 navigation:
   - url: "/about/"
