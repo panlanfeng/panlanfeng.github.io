@@ -1,6 +1,7 @@
 permalink: /:categories/:year/:month/:title
 
 highlighter: rouge
+site: http://panlanfeng.github.io
     
 navigation:
   - url: "/about/"
