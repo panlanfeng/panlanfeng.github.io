@@ -16,7 +16,7 @@ body {
   font-variant-ligatures: common-ligatures;
   -moz-font-feature-settings: "liga=1, swsh=0, cswh=0";
   text-rendering: optimizeLegibility;
-  font-family: "Minion Pro Caption", "Microsoft YaHei",minion-pro-caption, "Minion Pro", "Garamond Premier Pro Caption", "Garamond Premier Pro", "Hoefler Text", Constantia, Garamond, Palatino, "Palatino Linotype", Baskerville, "Book Antiqua", Georgia, "Century Schoolbook L", serif;
+  font-family: Palatino,"Microsoft YaHei","Hiragino Sans GB","WenQuanYi Micro Hei";
   color: #333232;
 }
 
@@ -54,7 +54,7 @@ body {
     color: #f1f1f1;
 }
 aside > ul {
-    font-family: "Myriad Pro", myriad-pro, "Helvetica Neue", Helvetica, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Corbel, Verdana, sans-serif;
+    font-family:  Palatino,"Microsoft YaHei","Hiragino Sans GB","WenQuanYi Micro Hei", sans-serif;
     text-transform: uppercase;
 }
 aside > h1 {
@@ -69,7 +69,7 @@ aside > h1 span {
 }
 
 .title, h1, h2, h3, h4, h5, h6 {
-    font-family: "Garamond Premier Pro", "Microsoft YaHei", garamond-premier-pro, "Adobe Caslon Pro", "Minion Pro", Constantia, serif;
+    font-family: "Palatino, "Microsoft YaHei","Hiragino Sans GB", "WenQuanYi Micro Hei",serif;
     font-weight: normal;
     font-style: normal;
     color: #111;
@@ -133,7 +133,7 @@ ul {
 /* inline code and code blocks */
 
 code, pre, kbd {
-  font-family: "Source Code Pro", Inconsolata, inconsolata, Terminus, Consolas, "Liberation Mono", "Bitstream Vera Sans Mono", "Andale Mono WT", "Andale Mono", Monaco, "Lucida Console", "Lucida Sans Typewriter", "Nimbus Mono L", "Courier New", Courier, monospace;
+  font-family: "Source Code Pro", Monaco, "Courier New", Courier, monospace;
   font-size: 14px;
 }
 
@@ -207,7 +207,7 @@ blockquote {
 
 #disqus_thread {
   width: 45em;
-  font-family: Helvetica, Arial, Clean, sans-serif;
+  font-family: Palatino,"Microsoft YaHei","Hiragino Sans GB","WenQuanYi Micro Hei",Helvetica, Arial, Clean, sans-serif;
   float:right;
 }
   #dsq-pagination {
@@ -215,7 +215,7 @@ blockquote {
   }
 
 .chaplink {
-  font-family: Helvetica, Arial, Clean, sans-serif;
+  font-family: Palatino,"Microsoft YaHei","Hiragino Sans GB","WenQuanYi Micro Hei",Helvetica, Arial, Clean, sans-serif;
   font-size: 90%;
 }
 .prevlink {
