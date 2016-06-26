@@ -11,18 +11,27 @@ Lanfeng Pan is currently a PhD student in Statistics at Iowa State University, u
 
 You can leave your comments here or email me at [pan@iastate.edu](mailto:pan@iastate.edu).
 
-
 <div id="disqus_thread"></div>
-<script type="text/javascript">
-  {% if site.server %}
-  var disqus_developer = 1;
-  {% endif %}
-  (function() {
-    var dsq = document.createElement('script');
-    dsq.async = true;
-    dsq.type = 'text/javascript';
-    dsq.src = 'http://lanfeng.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] ||
-     document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    
+    var disqus_config = function () {
+        this.page.url = "{{site.url}}";  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = "/"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        
+        s.src = '//lanfeng.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
 </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
