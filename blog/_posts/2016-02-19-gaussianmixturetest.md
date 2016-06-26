@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Naughty Gaussian Mixture Model
-author: <a href="http://panlanfeng.github.com/">Lanfeng</a>
+author: <a href="http://panlanfeng.github.io/">Lanfeng</a>
 ---
 
 Usually the convergence rate of maximum likelihood estimation is $n^{-1/2}$. And the log-likelihood ratio between two nested model is $\chi^2$ with degree of freedom corresponding to the difference in length of parameter. However the proof of these two results requires Fisher regularity conditions being satisfied. We tend to ignore those conditions, pretending they are always satisfied. Most of time this is not an issue since most conventional models are well behaved. However naughty models always exist, for example Gaussian mixture model. This fact is surprising because Gaussian mixture model is such simple and conventional.

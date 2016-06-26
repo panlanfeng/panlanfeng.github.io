@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Build lyx from source with qt5 on Mac
-author: <a href="http://panlanfeng.github.com/">Lanfeng</a>
+author: <a href="http://panlanfeng.github.io/">Lanfeng</a>
 ---
 
 

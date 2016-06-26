@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Live in open source world 
-author: <a href="http://panlanfeng.github.com/">Lanfeng</a>
+author: <a href="http://panlanfeng.github.io/">Lanfeng</a>
 ---
 
 

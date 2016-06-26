@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Nonparametric Kernel Estimation and Regression in Julia
-author: <a href="http://panlanfeng.github.com/">Lanfeng</a>
+author: <a href="http://panlanfeng.github.io/">Lanfeng</a>
 ---
 
 In term of Nonparametric density estimation and local regression, I would strongly recommend the package `KernelEstimator` because I developed it.

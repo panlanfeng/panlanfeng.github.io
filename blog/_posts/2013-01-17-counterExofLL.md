@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  A non-trivial Example that Lindeberg holds but Lyapunov fails
-author: <a href="http://panlanfeng.github.com/">Lanfeng</a>
+author: <a href="http://panlanfeng.github.io/">Lanfeng</a>
 ---
 
 

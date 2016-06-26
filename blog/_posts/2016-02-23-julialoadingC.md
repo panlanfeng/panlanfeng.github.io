@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Load C library in Julia
-author: <a href="http://panlanfeng.github.com/">Lanfeng</a>
+author: <a href="http://panlanfeng.github.io/">Lanfeng</a>
 ---
 
 It is very convenient to load C or C++ library in julia. It is no more than just run a `ccall` function. There is no need to write any additional C code to wrap it up as long as the C library is sharable. Here we use the `Yeppp` package as an illustration.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Statistics using Julia
-author: <a href="http://panlanfeng.github.com/">Lanfeng</a>
+author: <a href="http://panlanfeng.github.io/">Lanfeng</a>
 ---
 
 Although still in alpha stage, Julia is already quite usable. It does not have so many packages as R yet but the basic recipes, such as distributions and optimization, are ready. This is enough for research usage because most of time the existing packages does not fit into the purpose. We need to reimplement our own methods any way.

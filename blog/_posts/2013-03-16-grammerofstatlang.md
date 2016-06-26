@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Some ideas about grammar of statistics language
-author: <a href="http://panlanfeng.github.com/">Lanfeng</a>
+author: <a href="http://panlanfeng.github.io/">Lanfeng</a>
 ---
 
 Many problems, such as some in Philosophy, are difficult because it is hard to state them clearly. A powerful language system improves people's ability to solve complicated problems. 
