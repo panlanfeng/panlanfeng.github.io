@@ -7,9 +7,7 @@ title:  Lanfeng Pan
    <span class="subtitle">Lanfeng's Homepage</span>
  </p>
 
-Lanfeng Pan is currently a PhD student in Statistics at Iowa State University, under the supervising of [Dr. Yehua Li](http://www.public.iastate.edu/~yehuali/). He is interested in Missing Data Analysis, Nonparametric, Gaussian Mixture Model and False Discovery Rate control. The programming language he uses most is Julia and R. Click the [CV](/about/) tag for more about his research.
-
-You can leave your comments here or email me at [pan@iastate.edu](mailto:pan@iastate.edu).
+Lanfeng Pan is currently a PhD candidate in Statistics at Iowa State University, under the supervising of [Dr. Yehua Li](http://www.public.iastate.edu/~yehuali/). He is interested in Missing Data Analysis, Nonparametric, Gaussian Mixture Model and False Discovery Rate control. The programming language he uses most is Julia and R. Click the [CV](/about/) tag for more about his research.
 
 <div id="disqus_thread"></div>
 <script>
