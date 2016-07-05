@@ -16,7 +16,7 @@ body {
   font-variant-ligatures: common-ligatures;
   -moz-font-feature-settings: "liga=1, swsh=0, cswh=0";
   text-rendering: optimizeLegibility;
-  font-family: Palatino,"Microsoft YaHei","Hiragino Sans GB","WenQuanYi Micro Hei";
+  font-family: Palatino,'Times New Roman',"Microsoft YaHei","Hiragino Sans GB","WenQuanYi Micro Hei";
   color: #333232;
 }
 
@@ -138,13 +138,12 @@ code, pre, kbd {
 }
 
 pre {
+  background-color: #f7f7f7;
   margin: 0 0 1.5rem 0;
   padding: 0.6875rem;
-  /* 11 px */
-  background-color: #f7f7f7;
   line-height: 1.5rem;
-  white-space: pre;
   overflow: auto;
+
 }
 
 .sidebar {
