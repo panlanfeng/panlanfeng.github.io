@@ -14,7 +14,7 @@ The `Distributions` is an excellent package providing quite amount of typical di
 
 ~~~ julia
 using Distributions
-m = MixtureModel(Normal, [(-2.0, 1.2), 
+m = MixtureModel(Normal, [(-2.0, 1.2),
     (0.0, 1.0), (3.0, 2.5)], [0.2, 0.5, 0.3])
 x = rand(m, 1000)
 loglikelihood(m, x)
@@ -30,7 +30,7 @@ There is no very handy plotting package in Julia right now. The `Gadfly` is ambi
 
 ~~~ julia
 using Distributions, RCall
-m = MixtureModel(Normal, [(-2.0, 1.2), 
+m = MixtureModel(Normal, [(-2.0, 1.2),
     (0.0, 1.0), (3.0, 2.5)], [0.2, 0.5, 0.3])
 xs = linspace(-5,6, 500)
 den = pdf(m, xs)
@@ -44,8 +44,8 @@ plot(xs, den, type="l")
 
 ## Parallel Computing
 
- Julia has its own parallel computing framework. Starting Julia with 
- 
+ Julia has its own parallel computing framework. Starting Julia with
+
 ~~~~~ bash
 $ julia -p 4
 ~~~~~
@@ -63,9 +63,9 @@ vtau = [.5, .3, .1;]
     re[4]
 end
 ~~~~~
- 
+
 ## Parallel on Linux Cluster
- 
+
  Parallel computing within a single computer can only use a few processes. But a typical simulation study may have to be repeated for thousands times while each simulation may take several hours. In this case several hundred processes are needed. It is possible for julia to combine workers or processes across many nodes. For example in a PBS system, we can start julia with 160 workers in the following way. First request 10 nodes and 16 processes on each,
 
 ~~~~~ bash
@@ -78,10 +78,10 @@ $ qsub -I -l nodes=10:ppn=16
 $ julia --machinefile=$PBS_NODEFILE
 ~~~
 
- This will attach all requested processes into julia. The amazing thing is the 160 processes appear no difference with the 4 local processes started by `julia -p 4` in a single computer to the user. Or in other words it can run in parallel across several computers without using MPI and thus code running locally will run on linux serve without any change. 
- 
+ This will attach all requested processes into julia. The amazing thing is the 160 processes appear no difference with the 4 local processes started by `julia -p 4` in a single computer to the user. Or in other words it can run in parallel across several computers without using MPI and thus code running locally will run on linux serve without any change.
+
  Here is an example of repeating a hypothesis test for 160 times and see its asymptotic distribution. The following code first defines a function to do the simulation and uses `pmap` to run it on all workers.
-     
+
 ~~~ julia
 import GaussianMixtureTest, Distributions
 @everywhere using GaussianMixtureTest, Distributions

@@ -1,8 +1,11 @@
+name: Lanfeng Pan's Website
+description: Thoughts about statistics
 permalink: /:categories/:year/:month/:title/
-
-highlighter: rouge
 url: http://panlanfeng.github.io
-    
+markdown: kramdown
+highlighter: rouge
+
+
 navigation:
   - url: "/about/"
     title: CV
@@ -11,4 +14,4 @@ navigation:
   - url: "/Chinese/"
     title: 博客
   - title: Github
-    url: "https://github.com/panlanfeng" 
+    url: "http://github.com/panlanfeng"
