@@ -9,20 +9,20 @@ The stable lyx release looks terrible on retina screen. The on working version 2
 
 Download the lyx source and install qt5.
 
-~~~ Bash
+~~~ bash
 $ git clone git://git.lyx.org/lyx
 $ brew install qt5
 ~~~
-      
-Some other library may be needed, such as libmagic, automake, autoconf and gettext. 
 
-~~~ Bash      
+Some other library may be needed, such as libmagic, automake, autoconf and gettext.
+
+~~~ bash      
 $ brew install libmagic
 ~~~
 
-Create an empty folder `build` under the directory where you put lyx on. Go to `build` and run 
+Create an empty folder `build` under the directory where you put lyx on. Go to `build` and run
 
-~~~ Bash
+~~~ bash
 $../lyx/autogen.sh
 $../lyx/configure -with-version-suffix=-2.X --enable-qt5 \
  --enable-cxx11 CPPFLAGS=-I/usr/local/opt/qt5/include \
@@ -31,22 +31,25 @@ $../lyx/configure -with-version-suffix=-2.X --enable-qt5 \
 
 Or
 
-~~~ Bash 
+~~~ bash
 $ ../lyx/autogen.sh
 $ ../lyx/configure -with-version-suffix=-2.X --enable-qt5 \
  --with-qt-dir=/usr/local/opt/qt5 \
   --with-qt-includes=/usr/local/opt/qt5/include \
    --with-qt-libraries=/usr/local/opt/qt5/lib --enable-cxx11
 ~~~
-      
-`--enable-qt5` may not be required if you don't have both qt4 and qt5 installed. `--enable-cxx11` is added to avoid the error of ambiguous `next`. `--with-version-suffix` adds a suffix on the App name so you can still keep a stable version lyx. 
+
+`--enable-qt5` may not be required if you don't have both qt4 and qt5 installed. `--enable-cxx11` is added to avoid the error of ambiguous `next`. `--with-version-suffix` adds a suffix on the App name so you can still keep a stable version lyx.
 
 For the first time, you need to start lyx by running
 
-~~~ Bash
+~~~ bash
 $ /Applications/LyX-2.X.app/Contents/MacOS/lyx
 ~~~
 
-After that it works well. The font looks nice. The math equations are better but still a little blurred. 
+After that it works well. The font looks nice. The math equations are better but still a little blurred.
 
 My system is OS X 10.10.4. The discussion [here](http://www.mail-archive.com/lyx-devel@lists.lyx.org/msg188282.html) helps me to figure out options needed by configure.
+
+## Update
+Lyx 2.2.0 has already released and it supports retina display. So this solution is no longer necessary.
