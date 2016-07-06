@@ -5,7 +5,6 @@ url: http://panlanfeng.github.io
 markdown: kramdown
 highlighter: rouge
 
-
 navigation:
   - url: "/about/"
     title: CV
