@@ -135,16 +135,14 @@ ul {
 code, pre, kbd {
   font-family: "Source Code Pro", Monaco, "Courier New", Courier, monospace;
   font-size: 14px;
-  background-color: #f7f7f7;
+  
 }
 
 pre {
-
   margin: 0 0 1.5rem 0;
   padding: 0.6875rem;
   line-height: 1.5rem;
   overflow: auto;
-  background-color: #f7f7f7;
 }
 
 .sidebar {
