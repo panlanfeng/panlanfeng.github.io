@@ -15,15 +15,15 @@ Chandler Zuo is currently a data scientist at Audible Inc.
 
 ## Research Interests
 
- -  Large Scale Data Analytics
+ -  Large Scale Algorithms
 
- -  Bayesian Computation
+ -  Machine Learning
 
- -  Statistical Algorithms
+ -  Bayesian Methods
 
- -  Business Analytics
+ -  Text Mining
 
- -  R Programming
+ -  R/Python Programming
 
 ## Professional Affiliation
 
@@ -33,7 +33,4 @@ Associate of the Society of Actuaries, 2015.
 
  - Email: chandler.c.zuo /a t/ gmail.com
 
- - Twitter: @c_zuo
-
  - LinkedIn: [here](https://www.linkedin.com/pub/chandler-zuo-ph-d-asa/53/501/bb)
-
