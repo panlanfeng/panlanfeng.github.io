@@ -7,14 +7,20 @@ title:  Lanfeng Pan
   <span class="subtitle">PhD in Statistics</span>
 </p>
 
-Lanfeng Pan is currently a PhD candidate in Statistics at Iowa State University, supervised by [Dr. Yehua Li](http://www.public.iastate.edu/~yehuali/). His research interests include High Performance Computing, False Discovery Rate Control, Clustering and Missing Data Analysis. The programming languages he uses most are R and Julia.
+I am currently PhD candidate in Statistics at Iowa State University under the direction of [Dr. Yehua Li](http://www.public.iastate.edu/~yehuali/). My research interests include High Performance Computing, False Discovery Rate Control, Clustering and Missing Data Analysis.
+
+I completed my Master and Bachelor degree in Renmin University of China. My advisor of Master degree is Dr. Xiaolin Lyu.
+
+The programming languages I use most are R and Julia. I have been using R for 8 years and Julia for 4 years. I use R for plotting and reporting as well as small projects. When need to do heavy computing, I will turn to Julia for higher performance.
 
 [View CV in PDF](./about/LanfengPanCV.pdf).
+
+<!-- <iframe src="http://lanfeng.me/about/LanfengPanCV.pdf" style="width:680px; height:1800px;" frameborder="0"></iframe>
+-->
 
 ## Contact Me
 
 * Email: [pan@iastate.edu](mailto:pan@iastate.edu)
-* Github: [github.com/panlanfeng](http://github.com/panlanfeng)
 * Homepage: [lanfeng.me](http://lanfeng.me/)
 
 ## Education
@@ -25,7 +31,7 @@ Lanfeng Pan is currently a PhD candidate in Statistics at Iowa State University,
 
 ## Research
 
-* PAN, L., LI, Y., HE, K., LI, Y. and LI, Y. (2016). Latent Gaussian Mixture Models For Nationwide Kidney Transplant Center Evaluation. *The Annals of Applied Statistics* (submitted).
+* __PAN, L.__, LI, Y., HE, K., LI, Y. and LI, Y. (2016). Latent Gaussian Mixture Models For Nationwide Kidney Transplant Center Evaluation. *The Annals of Applied Statistics* (submitted).
 
 * Research Assistant, 2014 -- Now.
 
@@ -63,8 +69,8 @@ Worked as teaching assistant for STAT 341, 342, 447, 542 and 543. Major duties w
 * High Performance Computing
 * Multiple Testing, False Discovery Rate Control
 * Clustering, Subgroup Analysis
+* Missing Data Analysis
 * Health Policy
-* Missing Data
 
 ## Skills
 
