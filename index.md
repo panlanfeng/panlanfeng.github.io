@@ -69,7 +69,6 @@ Worked as teaching assistant for STAT 341, 342, 447, 542 and 543. Major duties w
 ## Skills
 
 * Proficient with R, Julia, Python, Linux Shell and git.
-
 * Proficient with shiny, ggplot2, knitr, rmarkdown and $\TeX$.
 
 ## Contributions
