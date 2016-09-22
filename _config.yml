@@ -6,8 +6,6 @@ markdown: kramdown
 highlighter: rouge
 
 navigation:
-  - url: "/about/"
-    title: CV
   - url: "/blog/"
     title: Blog
   - url: "/Chinese/"
