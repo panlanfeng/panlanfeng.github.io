@@ -70,27 +70,31 @@ Worked as teaching assistant for STAT 341, 342, 447, 542 and 543. Major duties w
 * Multiple Testing, False Discovery Rate Control
 * Clustering, Subgroup Analysis
 * Missing Data Analysis
+* Nonparametrics
 * Health Policy
 
 ## Skills
 
-* Proficient with R, Julia, Python, Linux Shell and git.
-* Proficient with shiny, ggplot2, knitr, rmarkdown and $\TeX$.
+* 8 years experience with R
+* 4 years experience with Julia
+* 4 years experience with Linux Shell and git
+* Some experience with Python
+* Proficient with `shiny`, `ggplot2`, `knitr`, `rmarkdown` and $\TeX$
 
 ## Contributions
-* Julia Package: [`LatentGaussianMixtureModel.jl`](http://github.com/panlanfeng/LatentGaussianMixtureModel.jl). Fit a Generalized Linear Mixed Model with Gaussian mixture random effects, deciding the number of components for Gaussian mixture. And further conduct a multiple test to detect heterogeneity while control the False Discovery Rate.
+* Julia Package: `LatentGaussianMixtureModel.jl`. Fits a Generalized Linear Mixed Model with Gaussian mixture random effects, deciding the number of components for Gaussian mixture. And further conduct a multiple test to detect heterogeneity while control the False Discovery Rate.
 
-* Julia Package: [`RFlavor.jl`](http://github.com/panlanfeng/RFlavor.jl). Implement a lot of useful and handy R functions in Julia. The purpose is to provide better statistical functions for Julia language as well as make it easy to translate R code into Julia.
+* Julia Package: [`RFlavor.jl`](http://github.com/panlanfeng/RFlavor.jl). Implements a lot of useful and handy R functions in Julia. The purpose is to provide better statistical functions for Julia language as well as make it easy to translate R code into Julia.
 
-* Julia Package: [`KernelEstimator.jl`](http://github.com/panlanfeng/KernelEstimator.jl). Implement kernel density estimation and kernel regression. In particular this package can deal with bounded kernel estimation using beta and gamma kernel and can choose bandwidth via cross valuation.
+* Julia Package: [`KernelEstimator.jl`](http://github.com/panlanfeng/KernelEstimator.jl). Implements kernel density estimation and kernel regression. In particular this package can deal with bounded kernel estimation using beta and gamma kernel and can choose bandwidth via cross valuation.
 
-* Julia Package: [`GaussianMixtureTest.jl`](http://github.com/panlanfeng/GaussianMixtureTest.jl). Implement the Kasahara-Shimotsu Test to decide number of components in Gaussian Mixture Model. There is very few package in this area.
+* Julia Package: [`GaussianMixtureTest.jl`](http://github.com/panlanfeng/GaussianMixtureTest.jl). Implements the Kasahara-Shimotsu Test to decide number of components in Gaussian Mixture Model. There is very few package in this area.
 
 * Contribute to Julia Package: [`Yeppp.jl`](http://github.com/JuliaMath/Yeppp.jl). This package ports the [`Yeppp!`](http://www.yeppp.info/) library into Julia, significantly speeding up several basic arithmetic operations.
 
 * Contribute to several core statistical packages in Julia community including  [`StatsBase.jl`](https://github.com/JuliaStats/StatsBase.jl), [`Rmath.jl`](https://github.com/JuliaStats/Rmath.jl), [`DataArrays.jl`](https://github.com/JuliaStats/DataArrays.jl) and [`KernelDensity.jl`](https://github.com/JuliaStats/KernelDensity.jl).
 
-* R package: [`bignmf`](http://github.com/panlanfeng/bignmf). Solve the nonnegative matrix factorization problem using coordinate descent.
+* R package: [`bignmf`](http://github.com/panlanfeng/bignmf). Solves the nonnegative matrix factorization problem using coordinate descent.
 
 <br/><br/>
 
