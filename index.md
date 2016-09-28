@@ -33,6 +33,8 @@ The programming languages I use most are R and Julia. I have been using R for 8 
 
 * __PAN, L.__, LI, Y., HE, K., LI, Y. and LI, Y. (2016). Latent Gaussian Mixture Models For Nationwide Kidney Transplant Center Evaluation. *The Annals of Applied Statistics* (submitted).
 
+* LU, X., SI, J., __PAN, L.__ and ZHAO, Y. (2011). Imputation of missing data using ensemble algorithms. *Fuzzy Systems and Knowledge Discovery, 2011 Eighth International Conference on Shanghai*. pp. 1312-1315
+
 * Research Assistant, 2014 -- Now.
 
 <p style="padding-left:60px;">The project is evaluating the performance of certain health care facilities. In this project we propose generalized linear mixed model with Gaussian Mixture random effects. This method can deal with False Discovery Rate control problem when the facilities are very heterogeneous.
