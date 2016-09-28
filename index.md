@@ -88,20 +88,40 @@ Teaching assistant for various levels of Mathematical Statistics, from entry lev
 * Some experience with Python
 * Proficient with `shiny`, `ggplot2`, `knitr`, `rmarkdown` and $\TeX$
 
-## Contributions
-* Julia package [`KernelEstimator.jl`](http://github.com/panlanfeng/KernelEstimator.jl). Implement kernel density estimation and kernel regression. In particular this package can deal with bounded kernel estimation using beta and gamma kernel and can choose bandwidth via cross valuation.
+## Software Packages
+* [`KernelEstimator.jl`](http://github.com/panlanfeng/KernelEstimator.jl).
 
-* Julia package `LatentGaussianMixtureModel.jl`. Fit a Generalized Linear Mixed Model with Gaussian mixture random effects and decide the number of components for Gaussian mixture. And further conduct a multiple test to detect heterogeneity while controlling the False Discovery Rate.
+<p style="padding-left:60px;">
+ Implement kernel density estimation and kernel regression. In particular this package can deal with bounded kernel estimation using beta and gamma kernel and can choose bandwidth via cross valuation.
+ </p>
 
-* Julia package [`RFlavor.jl`](http://github.com/panlanfeng/RFlavor.jl). Implement a lot of useful and handy R functions in Julia. The purpose is to provide better statistical functions for Julia language as well as make it easy to translate R code into Julia.
+* `LatentGaussianMixtureModel.jl`
+<p style="padding-left:60px;">
+Fit a Generalized Linear Mixed Model with Gaussian mixture random effects and decide the number of components for Gaussian mixture. And further conduct a multiple test to detect heterogeneity while controlling the False Discovery Rate.
+</p>
 
-* Julia package [`GaussianMixtureTest.jl`](http://github.com/panlanfeng/GaussianMixtureTest.jl). Implement the Kasahara-Shimotsu Test to decide number of components in Gaussian Mixture Model.
+* [`RFlavor.jl`](http://github.com/panlanfeng/RFlavor.jl)
+<p style="padding-left:60px;">
+Implement a lot of useful and handy R functions in Julia. The purpose is to provide better statistical functions for Julia language as well as make it easy to translate R code into Julia.
+</p>
 
-* Contribute to [`Yeppp.jl`](http://github.com/JuliaMath/Yeppp.jl). Port the [`Yeppp!`](http://www.yeppp.info/) library into Julia, significantly speeding up several basic arithmetic operations.
+* [`GaussianMixtureTest.jl`](http://github.com/panlanfeng/GaussianMixtureTest.jl)
+<p style="padding-left:60px;">
+Implement the Kasahara-Shimotsu Test to decide number of components in Gaussian Mixture Model.
+</p>
+
+* [`bignmf`](http://github.com/panlanfeng/bignmf)
+<p style="padding-left:60px;">
+R package to solve the nonnegative matrix factorization problem using coordinate descent.
+</p>
+
+* Contribute to [`Yeppp.jl`](http://github.com/JuliaMath/Yeppp.jl)
+<p style="padding-left:60px;">
+ Port the <a href="http://www.yeppp.info/"><code class="highlighter-rouge">Yeppp!</code></a>
+ library into Julia, significantly speeding up several basic arithmetic operations.
+</p>
 
 * Contribute to several core statistical packages in Julia community including  [`StatsBase.jl`](https://github.com/JuliaStats/StatsBase.jl), [`Rmath.jl`](https://github.com/JuliaStats/Rmath.jl), [`DataArrays.jl`](https://github.com/JuliaStats/DataArrays.jl) and [`KernelDensity.jl`](https://github.com/JuliaStats/KernelDensity.jl).
-
-* R package [`bignmf`](http://github.com/panlanfeng/bignmf). Solve the nonnegative matrix factorization problem using coordinate descent.
 
 <br/><br/>
 
