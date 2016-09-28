@@ -9,7 +9,7 @@ title:  Lanfeng Pan
 
 I am currently PhD candidate in Statistics at Iowa State University under the direction of [Dr. Yehua Li](http://www.public.iastate.edu/~yehuali/). My research interests include High Performance Computing, False Discovery Rate Control, Clustering and Missing Data Analysis.
 
-I completed my Master and Bachelor degree in Renmin University of China. My advisor of Master degree is Dr. Xiaolin Lyu.
+I completed my Master and Bachelor degree in Renmin University of China. My advisor of Master degree is Dr. Xiaolin Lyu. My research was about data mining and matrix factorization at that time.
 
 The programming languages I use most are R and Julia. I have been using R for 8 years and Julia for 4 years. I use R for plotting and reporting as well as small projects. When need to do heavy computing, I will turn to Julia for higher performance.
 
@@ -29,15 +29,26 @@ The programming languages I use most are R and Julia. I have been using R for 8 
 * Master, Renmin University of China, 2010 -- 2012.
 * Bachelor, Renmin University of China, 2006 -- 2010.
 
-## Research
+## Papers
 
 * __PAN, L.__, LI, Y., HE, K., LI, Y. and LI, Y. (2016). Latent Gaussian Mixture Models For Nationwide Kidney Transplant Center Evaluation. *The Annals of Applied Statistics* (submitted).
 
 * LU, X., SI, J., __PAN, L.__ and ZHAO, Y. (2011). Imputation of missing data using ensemble algorithms. *Fuzzy Systems and Knowledge Discovery, 2011 Eighth International Conference on Shanghai*. pp. 1312-1315
 
+## Awards
+* First Place in the 15th Annual Data Mining Cup, May 2014.
+
+<p style="padding-left:60px;">
+Analyzing online shopping data, predicting product returning probability given customer shopping records and item information. Our team achieved the lowest prediction error rate among challengers all over the world.
+</p>
+
+## Work experience
+
 * Research Assistant, 2014 -- Now.
 
-<p style="padding-left:60px;">The project is evaluating the performance of certain health care facilities. In this project we propose generalized linear mixed model with Gaussian Mixture random effects. This method can deal with False Discovery Rate control problem when the facilities are very heterogeneous.
+<p style="padding-left:60px;">
+Evaluating the performance of national wide kidney transplant centers.
+Clustering transplant centers based on their performance and detecting under performing and out performing while control the false discovery rate.
 </p>
 
 * Intern at Novartis Pharmaceuticals, NJ, May 2015 -- August 2015.
@@ -45,25 +56,19 @@ The programming languages I use most are R and Julia. I have been using R for 8 
 <p style="padding-left:60px;">
 Project 1: Building <code class="highlighter-rouge">shiny</code> apps to help other statisticians to visualize and analyze their data.
 
-Project 2: Modeling and visualizing labor investment in hundreds of pharmaceutical projects, detecting potential project delays and predicting future labor investments.
-</p>
-
-* First Place in the 15th Annual Data Mining Cup, May 2014.
-
-<p style="padding-left:60px;">
-One of the nine team members. The data was about online shopping. Task was to predict returning probability of a purchase given customer shopping records and item information. There were no explicitly useful feature available and all  records were correlated. We extracted every useful information by careful data transformation and grouping. We finally ended up with the lowest prediction error rate among teams all over the world.
+Project 2: Modeling and visualizing labor investment in hundreds of pharmaceutical projects, predicting future labor investments and detecting projects that may consume a lot of resources.
 </p>
 
 * Agriculture Experiment Station Consulting Group, May 2014 -- July 2014.
 
 <p style="padding-left:60px;">
-Job was answering questions from random visitors from other departments. Need to communicate with the visitors to figure out their questions, help to summarize their question in statistical language and then guide them to the solutions.
+Helping researchers from other departments with their models and data analysis.
 </p>
 
 * Teaching Assistant, August 2012 -- May 2014.
 
 <p style="padding-left:60px;">
-Worked as teaching assistant for STAT 341, 342, 447, 542 and 543. Major duties were answering questions, helping with homework and grading.
+Teaching assistant for various levels of Mathematical Statistics, from entry level to master level.
 </p>
 
 ## Research Interests
@@ -84,19 +89,19 @@ Worked as teaching assistant for STAT 341, 342, 447, 542 and 543. Major duties w
 * Proficient with `shiny`, `ggplot2`, `knitr`, `rmarkdown` and $\TeX$
 
 ## Contributions
-* Julia Package: `LatentGaussianMixtureModel.jl`. Fits a Generalized Linear Mixed Model with Gaussian mixture random effects, deciding the number of components for Gaussian mixture. And further conduct a multiple test to detect heterogeneity while control the False Discovery Rate.
+* Julia package [`KernelEstimator.jl`](http://github.com/panlanfeng/KernelEstimator.jl). Implement kernel density estimation and kernel regression. In particular this package can deal with bounded kernel estimation using beta and gamma kernel and can choose bandwidth via cross valuation.
 
-* Julia Package: [`RFlavor.jl`](http://github.com/panlanfeng/RFlavor.jl). Implements a lot of useful and handy R functions in Julia. The purpose is to provide better statistical functions for Julia language as well as make it easy to translate R code into Julia.
+* Julia package `LatentGaussianMixtureModel.jl`. Fit a Generalized Linear Mixed Model with Gaussian mixture random effects and decide the number of components for Gaussian mixture. And further conduct a multiple test to detect heterogeneity while controlling the False Discovery Rate.
 
-* Julia Package: [`KernelEstimator.jl`](http://github.com/panlanfeng/KernelEstimator.jl). Implements kernel density estimation and kernel regression. In particular this package can deal with bounded kernel estimation using beta and gamma kernel and can choose bandwidth via cross valuation.
+* Julia package [`RFlavor.jl`](http://github.com/panlanfeng/RFlavor.jl). Implement a lot of useful and handy R functions in Julia. The purpose is to provide better statistical functions for Julia language as well as make it easy to translate R code into Julia.
 
-* Julia Package: [`GaussianMixtureTest.jl`](http://github.com/panlanfeng/GaussianMixtureTest.jl). Implements the Kasahara-Shimotsu Test to decide number of components in Gaussian Mixture Model. There is very few package in this area.
+* Julia package [`GaussianMixtureTest.jl`](http://github.com/panlanfeng/GaussianMixtureTest.jl). Implement the Kasahara-Shimotsu Test to decide number of components in Gaussian Mixture Model.
 
-* Contribute to Julia Package: [`Yeppp.jl`](http://github.com/JuliaMath/Yeppp.jl). This package ports the [`Yeppp!`](http://www.yeppp.info/) library into Julia, significantly speeding up several basic arithmetic operations.
+* Contribute to [`Yeppp.jl`](http://github.com/JuliaMath/Yeppp.jl). Port the [`Yeppp!`](http://www.yeppp.info/) library into Julia, significantly speeding up several basic arithmetic operations.
 
 * Contribute to several core statistical packages in Julia community including  [`StatsBase.jl`](https://github.com/JuliaStats/StatsBase.jl), [`Rmath.jl`](https://github.com/JuliaStats/Rmath.jl), [`DataArrays.jl`](https://github.com/JuliaStats/DataArrays.jl) and [`KernelDensity.jl`](https://github.com/JuliaStats/KernelDensity.jl).
 
-* R package: [`bignmf`](http://github.com/panlanfeng/bignmf). Solves the nonnegative matrix factorization problem using coordinate descent.
+* R package [`bignmf`](http://github.com/panlanfeng/bignmf). Solve the nonnegative matrix factorization problem using coordinate descent.
 
 <br/><br/>
 
