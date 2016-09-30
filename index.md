@@ -9,7 +9,7 @@ title:  Lanfeng Pan
 
 I am currently PhD candidate in Statistics at Iowa State University under the direction of [Dr. Yehua Li](http://www.public.iastate.edu/~yehuali/). My research interests include High Performance Computing, False Discovery Rate Control, Clustering and Missing Data Analysis.
 
-I completed my Master and Bachelor degree in Renmin University of China. My advisor of Master degree is Dr. Xiaolin Lyu. My research was about data mining and matrix factorization at that time.
+I completed my Master and Bachelor degree in Renmin University of China. My advisor of Master degree is Dr. Xiaoling Lu. My research was about data mining and matrix factorization at that time.
 
 The programming languages I use most are R and Julia. I have been using R for 8 years and Julia for 4 years. I use R for plotting and reporting as well as small projects. When need to do heavy computing, I will turn to Julia for higher performance.
 
