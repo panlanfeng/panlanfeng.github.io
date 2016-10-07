@@ -33,7 +33,7 @@ The programming languages I use most are R and Julia. I have been using R for 8 
 
 * __PAN, L.__, LI, Y., HE, K., LI, Y. and LI, Y. (2016). Latent Gaussian Mixture Models For Nationwide Kidney Transplant Center Evaluation. *The Annals of Applied Statistics* (submitted).
 
-* LU, X., SI, J., __PAN, L.__ and ZHAO, Y. (2011). Imputation of missing data using ensemble algorithms. *Fuzzy Systems and Knowledge Discovery, 2011 Eighth International Conference on Shanghai*. pp. 1312-1315
+* LU, X., SI, J., __PAN, L.__ and ZHAO, Y. (2011). Imputation of missing data using ensemble algorithms. *Fuzzy Systems and Knowledge Discovery*, 2011 Eighth International Conference on Shanghai. pp. 1312-1315
 
 ## Awards
 * First Place in the 15th Annual Data Mining Cup, May 2014.
@@ -71,6 +71,9 @@ Helping researchers from other departments with their models and data analysis.
 Teaching assistant for various levels of Mathematical Statistics, from entry level to master level.
 </p>
 
+## Presentation
+ __PAN, L.__, LI, Y., HE, K., LI, Y. and LI, Y. (2015). Generalized Linear Mixed Model with Normal Mixture Random Effects. *Joint Statistical Meetings*. ASA. Seattle, WA, USA, Aug. 2015.
+
 ## Research Interests
 
 * High Performance Computing
@@ -86,7 +89,7 @@ Teaching assistant for various levels of Mathematical Statistics, from entry lev
 * 4 years experience with Julia
 * 4 years experience with Linux Shell and git
 * Some experience with Python
-* Proficient with `shiny`, `ggplot2`, `knitr`, `rmarkdown` and $\TeX$
+* Proficient with `shiny`, `ggplot2`, `knitr`, `rmarkdown` and $\LaTeX$
 
 ## Software Packages
 * [`KernelEstimator.jl`](http://github.com/panlanfeng/KernelEstimator.jl).
