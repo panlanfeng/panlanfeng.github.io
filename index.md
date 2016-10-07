@@ -72,7 +72,7 @@ Teaching assistant for various levels of Mathematical Statistics, from entry lev
 </p>
 
 ## Presentation
- __PAN, L.__, LI, Y., HE, K., LI, Y. and LI, Y. (2015). Generalized Linear Mixed Model with Normal Mixture Random Effects. *Joint Statistical Meetings*. ASA. Seattle, WA, USA, Aug. 2015.
+ * __PAN, L.__, LI, Y., HE, K., LI, Y. and LI, Y. (2015). Generalized Linear Mixed Model with Normal Mixture Random Effects. *Joint Statistical Meetings*. ASA. Seattle, WA, USA, Aug. 2015.
 
 ## Research Interests
 
