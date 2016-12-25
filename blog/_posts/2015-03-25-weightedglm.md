@@ -76,3 +76,4 @@ So next time, if you feel your positive set is not fitted well, lower the cut-of
 
 Here are the [codes](https://dl.dropboxusercontent.com/u/72368739/blog/weightedglm/weightedGLM.R).
 
+*(c)2015-2024 CHANDLER ZUO ALL RIGHTS PRESERVED*
