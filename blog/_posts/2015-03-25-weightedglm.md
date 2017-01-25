@@ -74,6 +74,6 @@ The conclusion is that, neither subsampling training data nor weighted logistic 
 
 So next time, if you feel your positive set is not fitted well, lower the cut-off and see what happens.
 
-Here are the [codes](https://dl.dropboxusercontent.com/u/72368739/blog/weightedglm/weightedGLM.R).
+Here are the [codes](https://github.com/chandlerzuo/chandlerzuo.github.io/blob/master/codes/weightedglm/weightedGLM.R).
 
 *(c)2015-2024 CHANDLER ZUO ALL RIGHTS PRESERVED*
