@@ -61,6 +61,10 @@ For both models, I computed the cosine similarity between different inaugural ad
 
 LDA embedding seems not distinguish a lot among different presidents, perhaps because inaugural speeches are all about the same topics. TF-IDF describes more granular information, by looking at the common words used by different presidents. While presidents in the same era tended to use the same language, different political parties also spoke quite similarly. Caution that what politicians do are not what they say though.
 
+**TECHNICAL DETAILS**
+
+All technical details are included by my [codes](https://github.com/chandlerzuo/chandlerzuo.github.io/blob/master/codes/inaugural/inaugural.py).
+
 *(c)2016-2025 CHANDLER ZUO ALL RIGHTS PRESERVED*
 
 ![](url)
