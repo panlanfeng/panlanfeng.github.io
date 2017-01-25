@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Trends and Semantics of Inaugural Speeches 
+title:  Trends and Semantics of Inaugural Addresses 
 author: <a href="http://chandlerzuo.github.io/">Chandler</a>
 ---
 
@@ -41,9 +41,9 @@ I computed all scores by using python's NLTK, Stanford CoreNLP and textstat modu
 ![](https://dl.dropboxusercontent.com/u/72368739/blog/inaugural/parse_tree_depth.png)
 ![](https://dl.dropboxusercontent.com/u/72368739/blog/inaugural/flesch_kincaid.png)
 
-It is interesting that the number of sentences is the only metric that have almost no pattern. The length of the address has changed a lot across the history. All other metrics suggest a trend of decay in the linguistic complexity. The new inaugural address set a record on the simplicity in the syntactic structures, but its sentence shortness was beaten by Johnson, and its average word length was way above the record set by JFK's final term.
+It is interesting that the number of sentences is the only metric that has almost no pattern. The length of the address has changed a lot across the history. All other metrics suggest a trend of decay in the linguistic complexity. The new inaugural address sets a record on the simplicity in the syntactic structures, but its sentence shortness is beaten by Johnson, and its average word length is way above the record set by JFK's final term.
 
-The overall linguistic difficulty, reflected by Flesch Kincaid Grade level, was recorded by Bush(1989), whose address was suitable for the level of Grade 6 students. Our founding fathers have astonishing scores beyond 25 -- their inaugural addresses are understandable only by those well educated people. After that, the overall difficulty level kept decreasing until 1970s, after when it slowly increased. The overall difficulty of the new president's speech is at a similar level as Clinton(1997) and Bush(2001).
+The overall linguistic difficulty, reflected by Flesch Kincaid Grade level, is recorded by Bush(1989), whose address is suitable for the level of Grade 6 students. Our founding fathers have astonishing scores beyond 25 -- their inaugural addresses are understandable only by those well educated people. After that, the overall difficulty level kept decreasing until 1970s, after when it slowly increased. The overall difficulty of the new president's speech is at a similar level as Clinton(1997) and Bush(2001).
 
 **SEMANTICS**
 
@@ -52,19 +52,21 @@ Besides the linguistic difficulty, I also investigated semantic similarity betwe
 1. TF-IDF;
 2. Latent Dirichlet Analysis(LDA).
 
-Both are quite common models used to compare text similarity. A tricky part is in the text preprocessing step; as both models require identifying inflectional forms of the same word, lemmatizing or stemming is required. Stemming methods are readily available by Python's NLTK module, but stemming itself is a quite crude way of word processing. Therefore, I used lemmatizing by first applying Python's Stanford CoreNLP module to perform Part-Of-Speech(POS) tagging, before using NLTK module to lemmatize based on the POS tag.
+Both are quite common models used to compare text similarity. A tricky part is in preprocessing. As both models require identifying inflectional forms of the same word, lemmatizing or stemming is required. Stemming methods are readily available by Python's NLTK module, but stemming itself is a quite crude way of word processing. Therefore, I used lemmatizing by first applying Python's Stanford CoreNLP module to perform Part-Of-Speech(POS) tagging, before using NLTK module to lemmatize based on the POS tag.
 
 For both models, I computed the cosine similarity between different inaugural addresses, and applied Local Linear Embedding to visualize. The results are the following:
 
 ![](https://dl.dropboxusercontent.com/u/72368739/blog/inaugural/lda_embed.png)
 ![](https://dl.dropboxusercontent.com/u/72368739/blog/inaugural/tfidf_embed.png)
 
-LDA embedding seems not distinguish a lot among different presidents, perhaps because inaugural speeches are all about the same topics. TF-IDF describes more granular information, by looking at the common words used by different presidents. While presidents in the same era tended to use the same language, different political parties also spoke quite similarly. Caution that what politicians do are not what they say though.
+LDA embedding seems not to distinguish a lot among different presidents, perhaps because inaugural speeches are all about the same topics. TF-IDF describes more granular information, by looking at the common words used by different presidents. While presidents in the same era tended to use the same language, different political parties also spoke quite similarly.
+
+Caution that what politicians do are not what they say though.
 
 **TECHNICAL DETAILS**
 
 All technical details are included by my [codes](https://github.com/chandlerzuo/chandlerzuo.github.io/blob/master/codes/inaugural/inaugural.py).
 
-*(c)2016-2025 CHANDLER ZUO ALL RIGHTS PRESERVED*
+*(c)2017-2026 CHANDLER ZUO ALL RIGHTS PRESERVED*
 
 ![](url)
