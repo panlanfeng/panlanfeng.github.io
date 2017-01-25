@@ -208,7 +208,7 @@ class syntactic_parser(object):
         if exists_in_s3('{}/{}'.format(s3_output_prefix, self.outfilename)):
             self.__load_parse_result()
             return
-        ss = CoreNLP('parse', corenlp_jars = ['/home/ec2-user/software/stanford-corenlp-full-2015-12-09/*'])
+        ss = CoreNLP('parse', corenlp_jars = ['~/software/stanford-corenlp-full-2015-12-09/*'])
         self.parsed = ss.parse_doc(self.sentences)
         ss.cleanup()
         
