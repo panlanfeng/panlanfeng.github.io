@@ -25,7 +25,7 @@ To analyze the linguistic complexity, I computed the following metrics for each 
 
 The first three metrics are naive. The constituency parse tree depth describes the syntactic complexity of a sentence. Constituency parse tree describes how different elements in a sentence are syntactically related to each other. Usually the depth of this tree is correlated with a sentence, but not necessarily. The deeper this tree is, the more nested syntactic components are there within the sentence. Take for example, a sample sentence from George Washington's address has the following parse tree:
 
-![](https://dl.dropboxusercontent.com/u/72368739/blog/inaugural/stgraph_washington.png)
+![](https://dl.dropboxusercontent.com/u/72368739/blog/inaugural/stgraph_washington.png =200x)
 
 While a sample sentence from the new president's address has the following structure:
 
@@ -43,7 +43,7 @@ I computed all scores by using python's NLTK, Stanford CoreNLP and textstat modu
 
 It is interesting that the number of sentences is the only metric that have almost no pattern. The length of the address has changed a lot across the history. All other metrics suggest a trend of decay in the linguistic complexity. The new inaugural address set a record on the simplicity in the syntactic structures, but its sentence shortness was beaten by Johnson, and its average word length was way above the record set by JFK's final term.
 
-The overall linguistic difficulty, reflected by Flesch Kincaid Grade level, was recorded by Bush(1989), whose address was suitable for the level of Grade 6 students. Our founding fathers have astonishing scores beyond 25 -- their inaugural addresses are understandable only by those well educated people. After that, the overall difficulty level kept decreasing until in the 1970s, after which it became increasing. The overall difficulty of the new president's speech is at a similar level as Clinton(1997) and Bush(2001).
+The overall linguistic difficulty, reflected by Flesch Kincaid Grade level, was recorded by Bush(1989), whose address was suitable for the level of Grade 6 students. Our founding fathers have astonishing scores beyond 25 -- their inaugural addresses are understandable only by those well educated people. After that, the overall difficulty level kept decreasing until 1970s, after when it slowly increased. The overall difficulty of the new president's speech is at a similar level as Clinton(1997) and Bush(2001).
 
 **SEMANTICS**
 
