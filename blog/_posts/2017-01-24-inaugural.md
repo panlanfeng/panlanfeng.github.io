@@ -41,7 +41,7 @@ I computed all scores by using python's NLTK, Stanford CoreNLP and textstat modu
 ![](https://dl.dropboxusercontent.com/u/72368739/blog/inaugural/parse_tree_depth.png)
 ![](https://dl.dropboxusercontent.com/u/72368739/blog/inaugural/flesch_kincaid.png)
 
-It is interesting that the number of sentences is the only metric that has almost no pattern. The length of the address has changed a lot across the history. All other metrics suggest a trend of decay in the linguistic complexity. The new inaugural address sets a record on the simplicity in the syntactic structures, but its sentence shortness is beaten by Johnson, and its average word length is way above the record set by JFK's final term.
+It is interesting that the number of sentences is the only metric that has almost no pattern. The length of the address has changed a lot across the history. All other metrics suggest a trend of decay in the linguistic complexity. The new inaugural address sets a record on the simplicity in the syntactic structures, but its sentence shortness is beaten by Johnson, and its average word length is way above the record set by FDR's final term.
 
 The overall linguistic difficulty, reflected by Flesch Kincaid Grade level, is recorded by Bush(1989), whose address is suitable for the level of Grade 6 students. Our founding fathers have astonishing scores beyond 25 -- their inaugural addresses are understandable only by those well educated people. After that, the overall difficulty level kept decreasing until 1970s, after when it slowly increased. The overall difficulty of the new president's speech is at a similar level as Clinton(1997) and Bush(2001).
 
