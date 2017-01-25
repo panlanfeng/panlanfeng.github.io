@@ -23,5 +23,5 @@ So here is my work. Forgive my bad aesthetic tastes.
 ![](https://dl.dropboxusercontent.com/u/72368739/blog/calabiyau/calabi_yau_5_side2.jpg)
 ![](https://dl.dropboxusercontent.com/u/72368739/blog/calabiyau/calabi_yau_5_side3.jpg)
 
-Here are the [codes](https://github.com/chandlerzuo/chandlerzuo.github.io/blob/master/codes/calabiyau/calabi_yau.R).
+Here are the [codes](https://github.com/chandlerzuo/chandlerzuo.github.io/blob/master/codes/calabi_yau/calabi_yau.R).
 
