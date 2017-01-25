@@ -4,14 +4,14 @@ title:  Trends and Semantics of Inaugural Addresses
 author: <a href="http://chandlerzuo.github.io/">Chandler</a>
 ---
 
-As the new president delivered his inaugural speech just 4 days ago, one additional entry was been added to the American Inaugural Address Database. As a diligent data scientist, I could not help ask this question: across the history, what are the trends and patterns of inaugural speeches?
+As the new president delivered his inaugural speech just 4 days ago, one additional entry was been added to the American Inaugural Address Database. As a diligent data scientist, I could not help to ask this question: across the history, what are the trends and patterns of inaugural speeches?
 
-Of course, asking about trends and patterns is too broad an analytical task. Therefore, for my analysis I focus on the following questions:
+Of course, asking about trends and patterns is too broad for an analytical task. Therefore, for my analysis I focus on the following questions:
 
-1. How does the level of linguistic complexity has changed across the history?
-2. Which presidents have similar semantic patterns in their inaugural addresses?
+1. How has the level of linguistic complexity changed across the history?
+2. Which presidents had similar semantic patterns in their inaugural addresses?
 
-Answering this question leads to an NLP exercise that I am sharing in this post. As the input data, I found a download [link](https://archive.org/details/Inaugural-Address-Corpus-1789-2009) containing inaugural addresses until 2009, and added to this data set by the 2013 and 2017 addresses that can be downloaded from anywhere.
+Answering these questions leads to an NLP exercise that I am sharing in this post. As the input data, I found a download [link](https://archive.org/details/Inaugural-Address-Corpus-1789-2009) containing inaugural addresses until 2009, and added to this data set by the 2013 and 2017 addresses that can be downloaded from anywhere.
 
 **LINGUISTIC COMPLEXITY**
 
@@ -25,7 +25,7 @@ To analyze the linguistic complexity, I computed the following metrics for each 
 
 The first three metrics are naive. The constituency parse tree depth describes the syntactic complexity of a sentence. Constituency parse tree describes how different elements in a sentence are syntactically related to each other. Usually the depth of this tree is correlated with a sentence, but not necessarily. The deeper this tree is, the more nested syntactic components are there within the sentence. Take for example, a sample sentence from George Washington's address has the following parse tree:
 
-![](https://dl.dropboxusercontent.com/u/72368739/blog/inaugural/stgraph_washington.png =200x)
+![](https://dl.dropboxusercontent.com/u/72368739/blog/inaugural/stgraph_washington.png)
 
 While a sample sentence from the new president's address has the following structure:
 
