@@ -68,5 +68,3 @@ Caution, though, that what politicians do are not what they say.
 All technical details are included by my [codes](https://github.com/chandlerzuo/chandlerzuo.github.io/blob/master/codes/inaugural/inaugural.py).
 
 *(c)2017-2026 CHANDLER ZUO ALL RIGHTS PRESERVED*
-
-![](url)
