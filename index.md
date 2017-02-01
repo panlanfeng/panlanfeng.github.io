@@ -13,7 +13,7 @@ I completed my Master and Bachelor degree in Renmin University of China. My advi
 
 The programming languages I use most are R and Julia. I have been using R for 8 years and Julia for 4 years. I use R for plotting and reporting as well as small projects. When need to do heavy computing, I will turn to Julia for higher performance.
 
-[View CV in PDF](./about/LanfengPanCV.pdf).
+[View CV in PDF](https://drive.google.com/file/d/0BxFSrTFpBM_PaHdZSWJ1S3U0dUk/view?usp=sharing).
 
 <!-- <iframe src="http://lanfeng.me/about/LanfengPanCV.pdf" style="width:680px; height:1800px;" frameborder="0"></iframe>
 -->
@@ -25,9 +25,17 @@ The programming languages I use most are R and Julia. I have been using R for 8 
 
 ## Education
 
-* Ph.D., Iowa State University, 2012 -- Now.
-* Master, Renmin University of China, 2010 -- 2012.
-* Bachelor, Renmin University of China, 2006 -- 2010.
+* Ph.D. in Statistics, Iowa State University, 2012 -- Now.
+* Master in Statistics, Renmin University of China, 2010 -- 2012.
+* Bachelor in Statistics, Renmin University of China, 2006 -- 2010.
+
+## Skills
+
+* 8 years experience with R
+* 4 years experience with Julia
+* 4 years experience with Linux Shell and git
+* Some experience with Python
+* Proficient with `shiny`, `ggplot2`, `knitr`, `rmarkdown` and $\LaTeX$
 
 ## Papers
 
@@ -39,7 +47,7 @@ The programming languages I use most are R and Julia. I have been using R for 8 
 * First Place in the 15th Annual Data Mining Cup, May 2014.
 
 <p style="padding-left:60px;">
-Analyzing online shopping data, predicting product returning probability given customer shopping records and item information. Our team achieved the lowest prediction error rate among challengers all over the world.
+Predicted item returning probability given customer and item information in an online shopping problem, utilizing ensemble algorithm consisting of C5.0, support vector machine and random forests. In charge of the C5.0 which gave the best performance.
 </p>
 
 ## Work experience
@@ -47,49 +55,34 @@ Analyzing online shopping data, predicting product returning probability given c
 * Research Assistant, 2014 -- Now.
 
 <p style="padding-left:60px;">
-Evaluating the performance of national wide kidney transplant centers.
-Clustering transplant centers based on their performance and detecting under performing and out performing while control the false discovery rate.
+Model the effects of kidney transplant centers on surgery recipients survival time. Do clustering and heterogeneity detection on latent transplant centers effects while controlling the false discovery rate.
 </p>
 
 * Intern at Novartis Pharmaceuticals, NJ, May 2015 -- August 2015.
 
 <p style="padding-left:60px;">
-Project 1: Building <code class="highlighter-rouge">shiny</code> apps to help other statisticians to visualize and analyze their data.
+Project 1: Built <code class="highlighter-rouge">shiny</code> based user interface for data analysis and visualization on remote server.
 
-Project 2: Modeling and visualizing labor investment in hundreds of pharmaceutical projects, predicting future labor investments and detecting projects that may consume a lot of resources.
+Project 2: Modeled the labor investment of pharmaceutical projects in decades to predict future labor investments. Also built an interactive visualization app for this data.
 </p>
 
 * Agriculture Experiment Station Consulting Group, May 2014 -- July 2014.
 
-<p style="padding-left:60px;">
-Helping researchers from other departments with their models and data analysis.
-</p>
-
 * Teaching Assistant, August 2012 -- May 2014.
-
-<p style="padding-left:60px;">
-Teaching assistant for various levels of Mathematical Statistics, from entry level to master level.
-</p>
 
 ## Presentation
  * __PAN, L.__, LI, Y., HE, K., LI, Y. and LI, Y. (2015). Generalized Linear Mixed Model with Normal Mixture Random Effects. *Joint Statistical Meetings*. ASA. Seattle, WA, USA, Aug. 2015.
 
 ## Research Interests
 
+* Data Mining
 * High Performance Computing
 * Multiple Testing, False Discovery Rate Control
 * Clustering, Subgroup Analysis
 * Missing Data Analysis
 * Nonparametrics
+* Data Visualization
 * Health Policy
-
-## Skills
-
-* 8 years experience with R
-* 4 years experience with Julia
-* 4 years experience with Linux Shell and git
-* Some experience with Python
-* Proficient with `shiny`, `ggplot2`, `knitr`, `rmarkdown` and $\LaTeX$
 
 ## Software Packages
 * [`KernelEstimator.jl`](http://github.com/panlanfeng/KernelEstimator.jl).
