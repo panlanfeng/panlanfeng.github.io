@@ -37,26 +37,36 @@ The programming languages I use most are R and Julia. I have been using R for 8 
 * Some experience with Python
 * Proficient with `shiny`, `ggplot2`, `knitr`, `rmarkdown` and $\LaTeX$
 
+## Awards
+* First Place in the 15th Annual Data Mining Cup out of 125 teams from 28 countries, May 2014.
+
+<p style="padding-left:60px;">
+Predicted item returning probability given customer and item information in an online shopping problem. In charge of tuning the C5.0 algorithm which gave the best performance.
+See details and news reports at <ul style="padding-left:40px;">
+ <li> <a href="http://www.data-mining-cup.de/en/review/goto/article/dmc-2014.html">DMC official website</a> </li>
+
+<li> <a href="http://stattrak.amstat.org/2016/02/01/dmc16/"> American Statistical Association news</a> </li>
+
+<li><a href="http://www.news.iastate.edu/news/2014/07/10/data-miners">Iowa State University news.</a> </li>
+</ul>
+</p>
+
 ## Papers
 
 * __PAN, L.__, LI, Y., HE, K., LI, Y. and LI, Y. (2016). Latent Gaussian Mixture Models For Nationwide Kidney Transplant Center Evaluation. (Submitted, under review). [arXiv:1703.03753](https://arxiv.org/abs/1703.03753).
 
+<p style="padding-left:60px;">
+Assessed the service quality of nationwide kidney transplant facilities and provided important guide for policymaker.
+To guarantee the fairness of comparison between facilities with very different number of patients, we proposed to model the facilities as random effects with Gaussian Mixture distribution. Our model avoided estimating variance for each facility so it was more stable than fixed effect models.
+Furthermore we compared facilities directly based on the their effects so our identification rule was superior than those based on p values.
+</p>
+
 * LU, X., SI, J., __PAN, L.__ and ZHAO, Y. (2011). Imputation of missing data using ensemble algorithms. *Fuzzy Systems and Knowledge Discovery*, 2011 Eighth International Conference on Shanghai. pp. 1312-1315
 
-## Awards
-* First Place in the 15th Annual Data Mining Cup, May 2014.
-
-<p style="padding-left:60px;">
-Predicted item returning probability given customer and item information in an online shopping problem, utilizing ensemble algorithm consisting of C5.0, support vector machine and random forests. In charge of the C5.0 which gave the best performance.
-</p>
 
 ## Work experience
 
 * Research Assistant, 2014 -- Now.
-
-<p style="padding-left:60px;">
-Model the effects of kidney transplant centers on surgery recipients survival time. Do clustering and heterogeneity detection on latent transplant centers effects while controlling the false discovery rate.
-</p>
 
 * Intern at Novartis Pharmaceuticals, NJ, May 2015 -- August 2015.
 
