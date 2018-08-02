@@ -7,11 +7,11 @@ title:  Lanfeng Pan
   <span class="subtitle">PhD in Statistics</span>
 </p>
 
-I am currently PhD candidate in Statistics at Iowa State University under the direction of [Dr. Yehua Li](http://www.public.iastate.edu/~yehuali/). My research interests include High Performance Computing, False Discovery Rate Control, Clustering and Missing Data Analysis.
+I graduated from Department of Statistics at Iowa State University under the direction of [Dr. Yehua Li](http://www.public.iastate.edu/~yehuali/). My research interests include Clustering, Missing Data Analysis and Multiple Testing.
 
 I completed my Master and Bachelor degree in Renmin University of China. My advisor of Master degree is Dr. Xiaoling Lu. My research was about data mining and matrix factorization at that time.
 
-The programming languages I use most are R and Julia. I have been using R for 8 years and Julia for 4 years. I use R for plotting and reporting as well as small projects. When need to do heavy computing, I will turn to Julia for higher performance.
+The programming languages I use most are R and Julia. I have been using R for 10 years and Julia for 6 years. I use R for plotting and reporting as well as small projects. When need to do heavy computing, I will turn to Julia for higher performance.
 
 [View CV in PDF](https://drive.google.com/file/d/0BxFSrTFpBM_PaHdZSWJ1S3U0dUk/view?usp=sharing).
 
@@ -25,17 +25,15 @@ The programming languages I use most are R and Julia. I have been using R for 8 
 
 ## Education
 
-* Ph.D. in Statistics, Iowa State University, 2012 -- Now.
+* Ph.D. in Statistics, Iowa State University, 2012 -- 2017.
 * Master in Statistics, Renmin University of China, 2010 -- 2012.
 * Bachelor in Statistics, Renmin University of China, 2006 -- 2010.
 
 ## Skills
 
-* 8 years experience with R
-* 4 years experience with Julia
-* 4 years experience with Linux Shell and git
-* Some experience with Python
-* Proficient with `shiny`, `ggplot2`, `knitr`, `rmarkdown` and $\LaTeX$
+* 10 years experience with R
+* 6 years experience with Julia
+* 6 years experience with Linux Shell, git, PBS (Portable Batch System)
 
 ## Awards
 * First Place in the 15th Annual Data Mining Cup out of 125 teams from 28 countries, May 2014.
@@ -53,7 +51,7 @@ See details and news reports at <ul style="padding-left:40px;">
 
 ## Papers
 
-* __PAN, L.__, LI, Y., HE, K., LI, Y. and LI, Y. (2016). Latent Gaussian Mixture Models For Nationwide Kidney Transplant Center Evaluation. (Submitted, under review). [arXiv:1703.03753](https://arxiv.org/abs/1703.03753).
+* __PAN, L.__, LI, Y., HE, K., LI, Y. and LI, Y. (2018). Latent Gaussian Mixture Models For Nationwide Kidney Transplant Center Evaluation. (Submitted, under review). [arXiv:1703.03753](https://arxiv.org/abs/1703.03753).
 
 <p style="padding-left:60px;">
 Assessed the service quality of nationwide kidney transplant facilities and provided important guide for policymaker.
@@ -66,7 +64,9 @@ Furthermore we compared facilities directly based on the their effects so our id
 
 ## Work experience
 
-* Research Assistant, 2014 -- Now.
+* Research Scientist, Eli Lilly and Company, 2017 -- now.
+
+* Research Assistant, 2014 -- 2017.
 
 * Intern at Novartis Pharmaceuticals, NJ, May 2015 -- August 2015.
 
@@ -86,13 +86,11 @@ Project 2: Modeled the labor investment of pharmaceutical projects in decades to
 ## Research Interests
 
 * Data Mining
-* High Performance Computing
-* Multiple Testing, False Discovery Rate Control
-* Clustering, Subgroup Analysis
-* Missing Data Analysis
+* Multiple Testing: False discovery rate control, graphical testing.
+* Clustering: Normal mixture model, subgroup analysis
+* Missing Data: Inverse probability weighting, fractional imputation
 * Nonparametrics
 * Data Visualization
-* Health Policy
 
 ## Software Packages
 * [`KernelEstimator.jl`](http://github.com/panlanfeng/KernelEstimator.jl).
