@@ -20,7 +20,7 @@ The programming languages I use most are R and Julia. I have been using R for 10
 
 ## Contact Me
 
-* Email: [pan@iastate.edu](mailto:pan@iastate.edu)
+* Email: [panlanfeng@gmail.com](mailto:panlanfeng@gmail.com)
 * Homepage: [lanfeng.me](http://lanfeng.me/)
 
 ## Education
@@ -64,7 +64,7 @@ Furthermore we compared facilities directly based on the their effects so our id
 
 ## Work experience
 
-* Research Scientist, Eli Lilly and Company, 2017 -- now.
+* Research Scientist, Eli Lilly and Company, December 2017 -- November 2018.
 
 * Research Assistant, 2014 -- 2017.
 
