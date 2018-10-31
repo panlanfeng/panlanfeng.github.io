@@ -29,11 +29,6 @@ The programming languages I use most are R and Julia. I have been using R for 10
 * Master in Statistics, Renmin University of China, 2010 -- 2012.
 * Bachelor in Statistics, Renmin University of China, 2006 -- 2010.
 
-## Skills
-
-* 10 years experience with R
-* 6 years experience with Julia
-* 6 years experience with Linux Shell, git, PBS (Portable Batch System)
 
 ## Awards
 * First Place in the 15th Annual Data Mining Cup out of 125 teams from 28 countries, May 2014.
