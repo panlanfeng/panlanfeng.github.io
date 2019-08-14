@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Lanfeng Pan&#39;s Random Walk</title>
+    <link>/</link>
+    <description>Recent content in Home on Lanfeng Pan&#39;s Random Walk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 23 Feb 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Load C library in Julia</title>
+      <link>/post/2016/02/23/load-c-library-in-julia/</link>
+      <pubDate>Tue, 23 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2016/02/23/load-c-library-in-julia/</guid>
+      <description>It is very convenient to load C or C++ library in julia. It is no more than just run a ccall function. There is no need to write any additional C code to wrap it up as long as the C library is sharable. Here we use the Yeppp package as an illustration.
+First download the C++ library Yeppp! and make sure that libyeppp.so (or .dylib or .dll) file is available on the system library search path or in the current directory.</description>
+    </item>
+    
+    <item>
+      <title>Nonparametric Kernel Estimation and Regression in Julia</title>
+      <link>/post/2016/02/22/nonparametric-kernel-estimation-and-regression-in-julia/</link>
+      <pubDate>Mon, 22 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2016/02/22/nonparametric-kernel-estimation-and-regression-in-julia/</guid>
+      <description>In term of Nonparametric density estimation and local regression, I would strongly recommend the package KernelEstimator because I developed it.
+Comparing to the KernelDensity from JuliaStat group, KernelEstimator provides more flexible kernels. In KernelEstimator, kernel is just a function but in KernelDensity kernel has to be of type Distribution with a closed form character function. KernelDensity use Fourier transformation to reduce the computing complexity and it is much more efficient.</description>
+    </item>
+    
+    <item>
+      <title>Statistics using Julia</title>
+      <link>/post/2016/02/20/statistics-using-julia/</link>
+      <pubDate>Sat, 20 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2016/02/20/statistics-using-julia/</guid>
+      <description>Although still in alpha stage, Julia is already quite usable. It does not have so many packages as R yet but the basic recipes, such as distributions and optimization, are ready. This is enough for research usage because most of time the existing packages does not fit into the purpose. We need to reimplement our own methods any way.
+In this post I will introduce some packages and features essential for statistical research.</description>
+    </item>
+    
+    <item>
+      <title>The Naughty Gaussian Mixture Model</title>
+      <link>/post/2016/02/19/the-naughty-gaussian-mixture-model/</link>
+      <pubDate>Fri, 19 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2016/02/19/the-naughty-gaussian-mixture-model/</guid>
+      <description>Usually the convergence rate of maximum likelihood estimation is $n^{-1&amp;frasl;2}$. And the log-likelihood ratio between two nested model is $\chi^2$ with degree of freedom corresponding to the difference in length of parameter. However the proof of these two results requires Fisher regularity conditions being satisfied. We tend to ignore those conditions, pretending they are always satisfied. Most of time this is not an issue since most conventional models are well behaved.</description>
+    </item>
+    
+    <item>
+      <title>Build lyx from source with qt5 on Mac</title>
+      <link>/post/2015/07/11/build-lyx-from-source-with-qt5-on-mac/</link>
+      <pubDate>Sat, 11 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2015/07/11/build-lyx-from-source-with-qt5-on-mac/</guid>
+      <description>The stable lyx release looks terrible on retina screen. The on working version 2.2 will support high resolution display but it will not be available in a short time. Building from source is the only option if one cannot bear with the blurry font.
+Download the lyx source and install qt5.
+$ git clone git://git.lyx.org/lyx $ brew install qt5  Some other library may be needed, such as libmagic, automake, autoconf and gettext.</description>
+    </item>
+    
+    <item>
+      <title>Some ideas about grammar of statistics language</title>
+      <link>/post/2013/03/16/some-ideas-about-grammar-of-statistics-language/</link>
+      <pubDate>Sat, 16 Mar 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2013/03/16/some-ideas-about-grammar-of-statistics-language/</guid>
+      <description>Many problems, such as some in Philosophy, are difficult because it is hard to state them clearly. A powerful language system improves people&amp;rsquo;s ability to solve complicated problems.
+R is almost a statistics language. Sometimes it helps to think in R commands. For example, pnorm(2.5, 2, 4), qt(.975, 20) is more intuitive than mathematical notations. And by, *ply functions will help to think about matrix computations.
+It is a good idea to melt programming language and mathematical language together.</description>
+    </item>
+    
+    <item>
+      <title>A non-trivial Example that Lindeberg holds but Lyapunov fails</title>
+      <link>/post/2013/01/17/a-non-trivial-example-that-lindeberg-holds-but-lyapunov-fails/</link>
+      <pubDate>Thu, 17 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2013/01/17/a-non-trivial-example-that-lindeberg-holds-but-lyapunov-fails/</guid>
+      <description>In STAT 643, we learned Lyapunov condition implies Lindeberg condition, but not the other way around. In homework, we were required to give an example that Lindeberg condition holds but Lyapunov condition fails. One easy trivial example is give a R.V. without only moments of the order of less or equal than 2. I spent a lot of time trying to find a nontrivial one but Lindeberg and Lyapunov just live and die together.</description>
+    </item>
+    
+    <item>
+      <title>最简单的方法制作分形图形</title>
+      <link>/post/2012/03/28/%E6%9C%80%E7%AE%80%E5%8D%95%E7%9A%84%E6%96%B9%E6%B3%95%E5%88%B6%E4%BD%9C%E5%88%86%E5%BD%A2%E5%9B%BE%E5%BD%A2/</link>
+      <pubDate>Wed, 28 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2012/03/28/%E6%9C%80%E7%AE%80%E5%8D%95%E7%9A%84%E6%96%B9%E6%B3%95%E5%88%B6%E4%BD%9C%E5%88%86%E5%BD%A2%E5%9B%BE%E5%BD%A2/</guid>
+      <description>记得之前在 Matrix67 的博客上看过一个用三台摄影机制作分形图形的视频。原理很简单，每台摄影机都拍摄同一块大屏幕的内容，而大屏幕分三块，每块都显示摄像机拍摄的内容。这个想法太巧妙了，不用任何复杂的数学推导和编程就能画出复杂的图形。视频的原目的是为了不编程画分形，可惜三台摄影机比一台笔记本电脑贵多了。利用这个原理，用 R 能模拟实现这样的过程。
+首先用 grid 包的 viewport 函数把一块屏幕分成三份，然后每份按照同样的方法再分成三份，如此递归下去，在最后一层放一个最简单的三角形或任何小图形。这样就可以跟视频中一样的方法在 R 里画出分形图形。还可以把图形或者是屏幕进行旋转得到更炫的图。
+直接看图。
+代码
+library(grid) re=function(k, vp.list, el){ k=k-1 if(k&amp;lt;=0){ el() return(0) } for(vp in vp.list){ pushViewport(vp) re(k-1, vp.list, el) upViewport() } } # 模拟三台摄影机 vp1 = viewport(x=1/4, y=1/4, w=1/2, h=1/2, angle=170) vp2 = viewport(x=3/4, y=1/4, w=1/2, h=1/2, angle=70) vp3 = viewport(x=1/2, y=3/4, w=1/2, h=1/2, angle=110) grid.newpage() re(13, vp.list = list(vp1, vp2, vp3), function()grid.polygon(c(0, 1, .5), c(0, 0, 1), gp=gpar(col=&amp;quot;green&amp;quot;))) # 五台摄影机 vp1 = viewport(x=1/6, y=1/6, w=1/3, h=1/3) vp2 = viewport(x=5/6, y=1/6, w=1/3, h=1/3) vp3 = viewport(x=1/6, y=5/6, w=1/3, h=1/3) vp4 = viewport(x=5/6, y=5/6, w=1/3, h=1/3) vp5 = viewport(x=1/2, y=1/2, w=1/3, h=1/3) grid.</description>
+    </item>
+    
+    <item>
+      <title>这两天与Github的斗争</title>
+      <link>/post/2012/03/05/%E8%BF%99%E4%B8%A4%E5%A4%A9%E4%B8%8Egithub%E7%9A%84%E6%96%97%E4%BA%89/</link>
+      <pubDate>Mon, 05 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2012/03/05/%E8%BF%99%E4%B8%A4%E5%A4%A9%E4%B8%8Egithub%E7%9A%84%E6%96%97%E4%BA%89/</guid>
+      <description>虽然我不怎么写博客，为了附庸风雅还是特想玩一下静态博客。好多静态博客都好好看哪，比如Julia，本博客直接抄袭了人家的劳动成果。 这里总结一下无历史负担的人快速搭建静态博客的过程。如果有历史负担，比如需要把以前的博客导入，请等待著名网友的终极教程出炉。
+ 首先你要了解下markdown，简单来说就是一套方便的用文本文件排版出网页的语法。 搭建好博客后就可以用这套语法方便的写东西了。其实如果你愿意用HTML直接写的话也是可以的。
+ 注册Github，在网站上创建目录 USERNAME.github.com(记住这里必须是你的用户名 + &amp;ldquo;github.com&amp;rdquo;)。
+ 安装github，设置ssh key等。参加github的帮助。
+ 打开github bash，转到某个目录下，比如E:/blog，用下面命令把别人的网站架构偷过来。
+$ git clone https://github.com/plusjade/jekyll-bootstrap.git USERNAME.github.com $ cd USERNAME.github.com $ git remote set-url origin git@github.com:USERNAME/USERNAME.github.com.git $ git push origin master   如果顺利，到这里网站已经搭好了，稍等一会就可以访问了。不过内容完全是山寨的。等熟悉了网站的架构与内容之间的关系，就可以随心所欲的定制自己的博客了。
+发表博客的方式如下：在blog/_post/目录下，新建一个名字类似yyyy-mm-dd-somename.md文件。该文件的开头需要遵循一定的格式，参考该目录下已有文件。 在修改了文件开头后就可以在后面写属于自己的内容，然后用下面的命令发布
+$ git add blog/_posts/yyyy-mm-dd-somename.md $ git commit -am &amp;quot;my 10000th blog&amp;quot; $ git push origin master  这时一篇博客就发表了。如果本地安装了jekyll，在发表之前可以运行jekyll serve在本地打开网站，检查是否一切如预期。
+如果在windows下使用的还要注意文件要用utf-8编码，切记切记！
+注意 复制了我的博客的同学们，请一定要记得修改_layouts/common.html中的Google Analysis代码部分和_layouts/post.html中disqus代码部分。要不然别人在你网站上发表的评论就跑到我的这里来了。
+参考文献 jekyllbootstrap</description>
+    </item>
+    
+    <item>
+      <title>传说中的你好，世界！</title>
+      <link>/post/2012/03/03/%E4%BC%A0%E8%AF%B4%E4%B8%AD%E7%9A%84%E4%BD%A0%E5%A5%BD%E4%B8%96%E7%95%8C/</link>
+      <pubDate>Sat, 03 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2012/03/03/%E4%BC%A0%E8%AF%B4%E4%B8%AD%E7%9A%84%E4%BD%A0%E5%A5%BD%E4%B8%96%E7%95%8C/</guid>
+      <description>HI!
+编码终于正常！</description>
+    </item>
+    
+    <item>
+      <title>About Lanfeng Pan</title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>I graduated from Department of Statistics at Iowa State University under the direction of Dr. Yehua Li. My research interests include Clustering, Missing Data Analysis and Multiple Testing.
+I completed my Master and Bachelor degree in Renmin University of China. My advisor of Master degree is Dr. Xiaoling Lu. My research was about data mining and matrix factorization at that time.
+The programming languages I use most are R and Julia.</description>
+    </item>
+    
+  </channel>
+</rss>

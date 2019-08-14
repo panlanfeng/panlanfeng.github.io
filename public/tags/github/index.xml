@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Github on Lanfeng Pan&#39;s Random Walk</title>
+    <link>/tags/github/</link>
+    <description>Recent content in Github on Lanfeng Pan&#39;s Random Walk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Mar 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>这两天与Github的斗争</title>
+      <link>/post/2012/03/05/%E8%BF%99%E4%B8%A4%E5%A4%A9%E4%B8%8Egithub%E7%9A%84%E6%96%97%E4%BA%89/</link>
+      <pubDate>Mon, 05 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2012/03/05/%E8%BF%99%E4%B8%A4%E5%A4%A9%E4%B8%8Egithub%E7%9A%84%E6%96%97%E4%BA%89/</guid>
+      <description>虽然我不怎么写博客，为了附庸风雅还是特想玩一下静态博客。好多静态博客都好好看哪，比如Julia，本博客直接抄袭了人家的劳动成果。 这里总结一下无历史负担的人快速搭建静态博客的过程。如果有历史负担，比如需要把以前的博客导入，请等待著名网友的终极教程出炉。
+ 首先你要了解下markdown，简单来说就是一套方便的用文本文件排版出网页的语法。 搭建好博客后就可以用这套语法方便的写东西了。其实如果你愿意用HTML直接写的话也是可以的。
+ 注册Github，在网站上创建目录 USERNAME.github.com(记住这里必须是你的用户名 + &amp;ldquo;github.com&amp;rdquo;)。
+ 安装github，设置ssh key等。参加github的帮助。
+ 打开github bash，转到某个目录下，比如E:/blog，用下面命令把别人的网站架构偷过来。
+$ git clone https://github.com/plusjade/jekyll-bootstrap.git USERNAME.github.com $ cd USERNAME.github.com $ git remote set-url origin git@github.com:USERNAME/USERNAME.github.com.git $ git push origin master   如果顺利，到这里网站已经搭好了，稍等一会就可以访问了。不过内容完全是山寨的。等熟悉了网站的架构与内容之间的关系，就可以随心所欲的定制自己的博客了。
+发表博客的方式如下：在blog/_post/目录下，新建一个名字类似yyyy-mm-dd-somename.md文件。该文件的开头需要遵循一定的格式，参考该目录下已有文件。 在修改了文件开头后就可以在后面写属于自己的内容，然后用下面的命令发布
+$ git add blog/_posts/yyyy-mm-dd-somename.md $ git commit -am &amp;quot;my 10000th blog&amp;quot; $ git push origin master  这时一篇博客就发表了。如果本地安装了jekyll，在发表之前可以运行jekyll serve在本地打开网站，检查是否一切如预期。
+如果在windows下使用的还要注意文件要用utf-8编码，切记切记！
+注意 复制了我的博客的同学们，请一定要记得修改_layouts/common.html中的Google Analysis代码部分和_layouts/post.html中disqus代码部分。要不然别人在你网站上发表的评论就跑到我的这里来了。
+参考文献 jekyllbootstrap</description>
+    </item>
+    
+  </channel>
+</rss>

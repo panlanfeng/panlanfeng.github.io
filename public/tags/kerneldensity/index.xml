@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kerneldensity on Lanfeng Pan&#39;s Random Walk</title>
+    <link>/tags/kerneldensity/</link>
+    <description>Recent content in kerneldensity on Lanfeng Pan&#39;s Random Walk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 22 Feb 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/kerneldensity/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Nonparametric Kernel Estimation and Regression in Julia</title>
+      <link>/post/2016/02/22/nonparametric-kernel-estimation-and-regression-in-julia/</link>
+      <pubDate>Mon, 22 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2016/02/22/nonparametric-kernel-estimation-and-regression-in-julia/</guid>
+      <description>In term of Nonparametric density estimation and local regression, I would strongly recommend the package KernelEstimator because I developed it.
+Comparing to the KernelDensity from JuliaStat group, KernelEstimator provides more flexible kernels. In KernelEstimator, kernel is just a function but in KernelDensity kernel has to be of type Distribution with a closed form character function. KernelDensity use Fourier transformation to reduce the computing complexity and it is much more efficient.</description>
+    </item>
+    
+  </channel>
+</rss>

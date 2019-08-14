@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>test on Lanfeng Pan&#39;s Random Walk</title>
+    <link>/tags/test/</link>
+    <description>Recent content in test on Lanfeng Pan&#39;s Random Walk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 03 Mar 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/test/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>传说中的你好，世界！</title>
+      <link>/post/2012/03/03/%E4%BC%A0%E8%AF%B4%E4%B8%AD%E7%9A%84%E4%BD%A0%E5%A5%BD%E4%B8%96%E7%95%8C/</link>
+      <pubDate>Sat, 03 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2012/03/03/%E4%BC%A0%E8%AF%B4%E4%B8%AD%E7%9A%84%E4%BD%A0%E5%A5%BD%E4%B8%96%E7%95%8C/</guid>
+      <description>HI!
+编码终于正常！</description>
+    </item>
+    
+  </channel>
+</rss>

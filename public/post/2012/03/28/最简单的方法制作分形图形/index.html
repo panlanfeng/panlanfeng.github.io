@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>最简单的方法制作分形图形 | Lanfeng Pan&#39;s Random Walk</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/categories/">Categories</a></li>
+      
+      <li><a href="/tags/">Tags</a></li>
+      
+      <li><a href="/index.xml">Subscribe</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">最简单的方法制作分形图形</span></h1>
+
+<h2 class="date">2012/03/28</h2>
+</div>
+
+<main>
+<p>记得之前在 <a href="http://www.matrix67.com/blog/archives/3913">Matrix67 的博客</a>上看过一个用三台摄影机制作分形图形的视频。原理很简单，每台摄影机都拍摄同一块大屏幕的内容，而大屏幕分三块，每块都显示摄像机拍摄的内容。这个想法太巧妙了，不用任何复杂的数学推导和编程就能画出复杂的图形。视频的原目的是为了不编程画分形，可惜三台摄影机比一台笔记本电脑贵多了。利用这个原理，用 R 能模拟实现这样的过程。</p>
+
+<p>首先用 <code>grid</code> 包的 <code>viewport</code> 函数把一块屏幕分成三份，然后每份按照同样的方法再分成三份，如此递归下去，在最后一层放一个最简单的三角形或任何小图形。这样就可以跟视频中一样的方法在 R 里画出分形图形。还可以把图形或者是屏幕进行旋转得到更炫的图。</p>
+
+<p>直接看图。</p>
+
+<p><img src="http://i.imgur.com/Q7mIqh2.png" alt="" title="摄像头正对着屏幕" />
+<img src="http://i.imgur.com/CGNtUrR.png" alt="" title="摄像头旋转一下" />
+<img src="http://i.imgur.com/NkMb2O6.png" alt="" title="多旋转一点" />
+<img src="http://i.imgur.com/nYwdE3c.png" alt="" title="颠倒过来是完全不一样的图" />
+<img src="http://i.imgur.com/ZUy8Ux8.png" alt="" title="试试五台摄像" /></p>
+
+<p>代码</p>
+
+<pre><code class="language-R">library(grid)
+re=function(k, vp.list, el){
+  k=k-1
+
+  if(k&lt;=0){
+    el()
+    return(0)
+  }
+  for(vp in vp.list){
+    pushViewport(vp)
+    re(k-1, vp.list, el)
+    upViewport()
+  }
+}
+# 模拟三台摄影机
+vp1 = viewport(x=1/4, y=1/4, w=1/2, h=1/2, angle=170)    
+vp2 = viewport(x=3/4, y=1/4, w=1/2, h=1/2, angle=70)
+vp3 = viewport(x=1/2, y=3/4, w=1/2, h=1/2, angle=110)
+
+grid.newpage()
+re(13, vp.list = list(vp1, vp2, vp3), 
+   function()grid.polygon(c(0, 1, .5), c(0, 0, 1), gp=gpar(col=&quot;green&quot;)))
+
+# 五台摄影机
+vp1 = viewport(x=1/6, y=1/6, w=1/3, h=1/3)
+vp2 = viewport(x=5/6, y=1/6, w=1/3, h=1/3)
+vp3 = viewport(x=1/6, y=5/6, w=1/3, h=1/3)
+vp4 = viewport(x=5/6, y=5/6, w=1/3, h=1/3)
+vp5 = viewport(x=1/2, y=1/2, w=1/3, h=1/3)
+grid.newpage()
+re(13, vp.list = list(vp1, vp2, vp3, vp4,vp5), 
+   function()grid.polygon(c(0, 1, .5), c(0, 0, 1), gp=gpar(col=&quot;green&quot;)))
+</code></pre>
+
+</main>
+
+  <footer>
+  <script src="//yihui.name/js/math-code.js"></script>
+<script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script async src="//yihui.name/js/center-img.js"></script>
+
+  
+  <hr/>
+  &copy; <a href="https://lanfeng.me">Lanfeng Pan</a> | <a href="https://github.com/panlanfeng">Github</a>
+  
+  </footer>
+  </body>
+</html>
+

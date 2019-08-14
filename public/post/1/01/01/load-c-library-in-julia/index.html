@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Load C library in Julia | A minimal Hugo website</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/categories/">Categories</a></li>
+      
+      <li><a href="/tags/">Tags</a></li>
+      
+      <li><a href="/index.xml">Subscribe</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">Load C library in Julia</span></h1>
+<h2 class="author">&lt;a href=&#34;http://panlanfeng.github.io/&#34;&gt;Lanfeng&lt;/a&gt;</h2>
+
+</div>
+
+<main>
+<p>It is very convenient to load C or C++ library in julia. It is no more than just run a <code>ccall</code> function. There is no need to write any additional C code to wrap it up as long as the C library is sharable. Here we use the <code>Yeppp</code> package as an illustration.</p>
+
+<p>First download the C++ library Yeppp! and make sure that libyeppp.so (or .dylib or .dll) file is available on the system library search path or in the current directory.</p>
+
+<p>Then the following julia function will call adding function in Yeppp!.</p>
+
+<pre><code class="language-julia">function add!(res::Array{Float64}, x::Array{Float64}, y::Array{Float64})
+    assert(length(x) == length(y))
+    n = length(x)
+    const status = ccall( (:yepCore_Add_V64fV64f_V64f, libyeppp), Cint, (Ptr{Float64}, Ptr{Float64}, Ptr{Float64}, Culong), x, y, res, n)
+    status != 0 &amp;&amp; error(&quot;yepCore_Add_V64fV64f_V64f: error: &quot;, status)
+    res
+end
+</code></pre>
+
+<p>where <code>:yepCore_Add_V64fV64f_V64f</code> is the function name and <code>libyeppp</code> is the library name.</p>
+
+<p>Since a similar definition is applicable for many other functions in Yeppp!, I wrote a macro to map many more into julia.</p>
+
+<pre><code class="language-julia">macro yepppfunsAA_A(fname, libname, BT)
+    errorname = libname * &quot;: error: &quot;
+    quote 
+        global $(fname)
+        function $(fname)(res::Array{$(BT)}, x::Array{$(BT)}, y::Array{$(BT)})
+            n = length(x)
+            assert(n == length(y) == length(res))
+            
+            const status = ccall( ($(libname), libyeppp), Cint, (Ptr{$(BT)}, Ptr{$(BT)}, Ptr{$(BT)}, Culong), x, y, res, n)
+            status != 0 &amp;&amp; error($(errorname), status)
+            res
+        end
+    end 
+end 
+@yepppfunsAA_A add! &quot;yepCore_Add_V64fV64f_V64f&quot; Float64
+@yepppfunsAA_A multiply! &quot;yepCore_Multiply_V64fV64f_V64f&quot; Float64
+</code></pre>
+
+<p>This will automatically define <code>add!</code>, <code>multiply!</code> and more julia functions.</p>
+
+</main>
+
+  <footer>
+  <script src="//yihui.name/js/math-code.js"></script>
+<script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script async src="//yihui.name/js/center-img.js"></script>
+
+  
+  <hr/>
+  &copy; <a href="https://yihui.name">Yihui Xie</a> 2017 &ndash; 2019 | <a href="https://github.com/yihui">Github</a> | <a href="https://twitter.com/xieyihui">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+

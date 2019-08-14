@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>statistics on Lanfeng Pan&#39;s Random Walk</title>
+    <link>/tags/statistics/</link>
+    <description>Recent content in statistics on Lanfeng Pan&#39;s Random Walk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 20 Feb 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/statistics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Statistics using Julia</title>
+      <link>/post/2016/02/20/statistics-using-julia/</link>
+      <pubDate>Sat, 20 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2016/02/20/statistics-using-julia/</guid>
+      <description>Although still in alpha stage, Julia is already quite usable. It does not have so many packages as R yet but the basic recipes, such as distributions and optimization, are ready. This is enough for research usage because most of time the existing packages does not fit into the purpose. We need to reimplement our own methods any way.
+In this post I will introduce some packages and features essential for statistical research.</description>
+    </item>
+    
+  </channel>
+</rss>
