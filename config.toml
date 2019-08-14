@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://panlanfeng.github.io/"
 languageCode = "en-us"
 title = "Lanfeng Pan's Random Walk"
 theme = "hugo-xmin"
