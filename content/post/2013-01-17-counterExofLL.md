@@ -12,4 +12,4 @@ In STAT 643, we learned Lyapunov condition implies Lindeberg condition, but not 
 
 I didn't search out any nontrivial example. There must be some other guys found it but I just couldn't find it. Finally I got it myself when I couldn't sleep last night. 
 
-<img src="http://i.imgur.com/KUhdoHl.jpg" width="400" height="600">
+![](https://imgur.com/KUhdoHl.jpg)

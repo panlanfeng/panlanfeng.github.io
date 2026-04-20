@@ -52,7 +52,7 @@ $ /Applications/LyX-2.X.app/Contents/MacOS/lyx
 
 After that it works well. The font looks nice. The math equations are better but still a little blurred.
 
-My system is OS X 10.10.4. The discussion [here](http://www.mail-archive.com/lyx-devel@lists.lyx.org/msg188282.html) helps me to figure out options needed by configure.
+My system is OS X 10.10.4. The discussion [here](https://www.mail-archive.com/lyx-devel@lists.lyx.org/msg188282.html) helps me to figure out options needed by configure.
 
 ## Update
 Lyx 2.2.0 has already released and it supports retina display. So this solution is no longer necessary.
