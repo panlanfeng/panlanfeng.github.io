@@ -6,6 +6,12 @@ theme = "hugo-xmin"
 [markup.goldmark.extensions.footnote]
   backLinkContent = "↩"
 
+[markup.goldmark.extensions.passthrough]
+  enable = true
+  [markup.goldmark.extensions.passthrough.delimiters]
+    block = [["$$", "$$"]]
+    inline = [["$", "$"]]
+
 [permalinks]
     post = "/post/:year/:month/:day/:slug/"
 

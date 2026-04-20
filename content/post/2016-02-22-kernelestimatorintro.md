@@ -22,21 +22,21 @@ Comparing to the `KernelDensity` from JuliaStat group, `KernelEstimator` provide
 
 In addition Fourier transformation assume the kernel keeps unchanged on all the data points except for a shift in mean. But the shape of some kernel can also be different at difference data points. Such as `Beta` and `Gamma` kernel.
 
-And also Fourier transformation approach make the prediction on an arbitrary point difficult. It is designed to predict on some grid points in an interval. To predict on an arbitrary $$x$$ it has to do an interpolation.
+And also Fourier transformation approach make the prediction on an arbitrary point difficult. It is designed to predict on some grid points in an interval. To predict on an arbitrary $x$ it has to do an interpolation.
 
 The most proud feature of `KernelEstimator` is it provides Beta kernel and Gamma kernel for bounded density estimation.
 
 ## Why Boundary Matters
 
-Usually kernel does not matter. However there is an exception when the data is bounded. When the domain of $$x$$ is bounded and the density of close to the boundary is large, the regular kernel estimation will suffer boundary biases. Think of this, to estimate the density near the boundary we have to have data there. Then the kernel function will have part of its density leaking outside of the boundary. That means we are underestimating the true density. Cutting off at the boundary and cumulating all the leaked density at one point at the boundary does not help.
+Usually kernel does not matter. However there is an exception when the data is bounded. When the domain of $x$ is bounded and the density of close to the boundary is large, the regular kernel estimation will suffer boundary biases. Think of this, to estimate the density near the boundary we have to have data there. Then the kernel function will have part of its density leaking outside of the boundary. That means we are underestimating the true density. Cutting off at the boundary and cumulating all the leaked density at one point at the boundary does not help.
 
-See an example of $$\chi^2(2)$$. The red density using normal density is very wiggly and has large error near 0. The blue density using gamma density fits the truth closely. Both density estimation obtain their bandwidth via cross validation.
+See an example of $\chi^2(2)$. The red density using normal density is very wiggly and has large error near 0. The blue density using gamma density fits the truth closely. Both density estimation obtain their bandwidth via cross validation.
 
-![](https://ctaerg-ch3301.files.1drv.com/y3mrk52xfimk54uOn44typ8vhjTuasHBf3szwow8hmFYb7cnU1cKdw0T3ggUN4sKG4xrp3pBUuwYVjFU9djTs16ol8xwX0ixKLW1YswHEXYs7LZ_887K6MV-O_CesXZ4jDy6F_CeW5Z9sz9IA6pr2eNaslTFoUsNgvLbpe8s-lWUV0?width=480&height=480&cropmode=none)
+![](https://i.imgur.com/Z8kRqf9.png)
 
 If manually increase the bandwidth of normal kernel, the variance is much smaller but the bias near the boundary gets larger.
 
-![](https://a9aerg-ch3302.files.1drv.com/y3mdm5rSwpc07QYb7AoNBVFeUVX9kalakxeMvkuJtmsCX81mOFpt3X6S3uOr-vGDwQos-57v85Z66vnGfHXxEh5Pq6UuEpwqVkkzxqQwq75BF-QefwLx-1kmC7KFnEi14LHJ2d43HbANAMgEqevw5kjP8wv1larMxm90FJWMUkzcrk?width=480&height=480&cropmode=none)
+![](https://i.imgur.com/L7aHWZG.png)
 
 
 Similar problem also exist in kernel regression.
@@ -92,7 +92,7 @@ yfit0=npr(x, y, xeval=xeval, reg=localconstant)
 yfit1=npr(x, y, xeval=xeval, reg=locallinear)
 ~~~
 
-`gammakernel` and `betakernel` are also provided in kernel regression since boundary of $$x$$ effects the prediction on $$y$$.
+`gammakernel` and `betakernel` are also provided in kernel regression since boundary of $x$ effects the prediction on $y$.
 
 In addition the confidence band can be obtained using
 

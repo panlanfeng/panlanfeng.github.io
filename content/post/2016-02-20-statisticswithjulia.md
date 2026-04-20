@@ -14,7 +14,7 @@ In this post I will introduce some packages and features essential for statistic
 
 ## Distributions
 
-The `Distributions` is an excellent package providing quite amount of typical distributions. Distributions are of type `Distribution`. There are common interface to `Distribution`, such as `pdf`, `logpdf`, `cdf`, `loglikelihood`, `entropy` and `quantile`... For example the following code generates $$1000$$ random number from Gaussian mixture model and calculate the log-likelihood.
+The `Distributions` is an excellent package providing quite amount of typical distributions. Distributions are of type `Distribution`. There are common interface to `Distribution`, such as `pdf`, `logpdf`, `cdf`, `loglikelihood`, `entropy` and `quantile`... For example the following code generates 1000 random number from Gaussian mixture model and calculate the log-likelihood.
 
 ~~~ julia
 using Distributions
@@ -24,7 +24,7 @@ x = rand(m, 1000)
 loglikelihood(m, x)
 ~~~
 
-The density functions of `Distributions` are imported from another package `StatsFuns` which use the `Rmath` library. A problem with `Rmath` is it only provide scalar density function which can be inefficient when we are evaluating on a vector of values. For example, to obtain the log-likelihood a Beta distribution on $$10000$$ data points the Beta function will be calculated for $$10000$$ times. When I was developing the `KernelEstimator` package, I realized writing the kernel function in pure Julia can be more efficient than using `Rmath`. In addition, it is possible to optimize the `exp` and `log` in vector case using `Yeppp` package. Hope one day the density functions in `StatsFuns` be rewritten in julia instead of importing `Rmath`.
+The density functions of `Distributions` are imported from another package `StatsFuns` which use the `Rmath` library. A problem with `Rmath` is it only provide scalar density function which can be inefficient when we are evaluating on a vector of values. For example, to obtain the log-likelihood a Beta distribution on 10000 data points the Beta function will be calculated for 10000 times. When I was developing the `KernelEstimator` package, I realized writing the kernel function in pure Julia can be more efficient than using `Rmath`. In addition, it is possible to optimize the `exp` and `log` in vector case using `Yeppp` package. Hope one day the density functions in `StatsFuns` be rewritten in julia instead of importing `Rmath`.
 
 
 
@@ -54,7 +54,7 @@ plot(xs, den, type="l")
 $ julia -p 4
 ~~~~~
 
- will attach 4 workers if a computer has more than 4 processes. Then we can do parallel computing via the `pmap` function or the `@parallel` macro. For example, in `GaussianMixtureTest` I want to find out the largest log-likelihood among several possible $$\tau$$ values
+ will attach 4 workers if a computer has more than 4 processes. Then we can do parallel computing via the `pmap` function or the `@parallel` macro. For example, in `GaussianMixtureTest` I want to find out the largest log-likelihood among several possible $\tau$ values
 
 ~~~~~ julia
 using Distributions
@@ -86,7 +86,7 @@ $ julia --machinefile=$PBS_NODEFILE
 
  Here is an example of repeating a hypothesis test for 160 times and see its asymptotic distribution. The following code first defines a function to do the simulation and uses `pmap` to run it on all workers.
 
-~~~ julia
+~~~~ julia
 import GaussianMixtureTest, Distributions
 @everywhere using GaussianMixtureTest, Distributions
 @everywhere function brun(b::Int)

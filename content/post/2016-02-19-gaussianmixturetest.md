@@ -51,9 +51,9 @@ Both tests need some additional steps to increase the test power.
 
 Here I repeat the Kasahra-Shimotsu's modified EM test on 100 random data generated from a normal distribution and show in the first figure how the density of 100 test statistics match the asymptotic distribution. The second figure is when $x$ are generated from two components mixture.
 
-![](https://bdaerg-ch3302.files.1drv.com/y3mAtYxON0JkPEzYdNUSRJ1IIaNCu3wmYPu36onmb1UjqaZN9VvCYJIApjHIEueIBrYdGxOD_esEtIUNlbhVKz2-tHRnX54uoNpPhPwptwUnQmw8ogDaKk-CnBbRE_9LguQa8Nwl95Bktwp8tpfbF3k8ZRU85lb2UvUxC-MxRhyUS4?width=480&height=480&cropmode=none)
+![](https://i.imgur.com/T5fIdY4.png)
 
-![](https://bnaerg-ch3302.files.1drv.com/y3m_kMtcnGWaf3WK0GLYpYLdOHws-A-15TueZSn7Spe-PiowUaq2tqXOMQ9LzJidhcowyXRGwXBdGhOSOf8ITaQ_P1-5xrAEl7xky41f_NAmZsOfTg1pvJABoVDJGePEnd6fyo-jI59gGcHGMmqPV78YyzhAEriZSBVD_zqLSBoK3c?width=480&height=480&cropmode=none)
+![](https://i.imgur.com/vTOpYE6.png)
 
 
 Gaussian mixture model is a fundamental tool that can be nested into many more complicated models. Such as in generalized linear mixed model with Gaussian mixture random effects. In this case when the regression response is discrete, the first and third properties goes away. But the asymptotic distribution of its l.r.t. is still unknown. The interesting thing is although the second property prevent from $n^{-1/2}$ convergence rate on mixture parameters, the fixed effect still has $n^{-1/2}$ consistency. This has some kind of similarity to the semi-parametric model and deserve further investigation. 
